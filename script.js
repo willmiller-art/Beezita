@@ -438,163 +438,396 @@ window.addEventListener('resize', () => {
 // --- SISTEMA DE INTERNACIONALIZAÇÃO (i18n) ---
 const dicionario = {
     pt: {
-        slogan: "EXPLORE O MHNJB COM AS ABELHAS!",
-        start_trail: "COMEÇAR TRILHA",
-        trail_started: "INÍCIO DA TRILHA",
-        go_to_gate: "VÁ ATÉ A PORTARIA 1 DO MHNJB",
-        nav_trail: "Trilha",
-        nav_discover: "Desafio",
-        nav_collection: "Coleção",
-        nav_mhnjb: "MHNJB",
-        nav_faq: "Perguntas Frequentes",
-        menu_sub: "Explore o MHNJB com as abelhas",
-        menu_info: "Informações",
-        settings_title: "Configurações",
-        set_sys: "SISTEMA",
-        set_eco: "Modo Econômico",
-        set_gps: "GPS e Localização",
-        set_vib: "VIBRAÇÃO",
-        set_haptic: "Feedback tátil",
-        set_pref: "PREFERÊNCIAS",
-        set_lang: "Idioma",
-        set_data: "GERENCIAR DADOS",
-        set_reset_trail: "Apagar Progresso da Trilha",
-        set_reset_col: "Limpar Coleção Desbloqueada",
-        modal_sure: "Tem certeza?",
-        modal_no: "Não",
-        modal_yes: "Sim, apagar",
-        eco_title: "Modo Econômico",
-        eco_anim: "Reduzir animações",
-        eco_desc: "Ativar esta opção reduz os efeitos visuais para economizar bateria.",
-        gps_title: "Localização",
-        gps_allow: "Permitir acesso à localização",
-        gps_prec: "Melhorar precisão da localização",
-        gps_desc: "A precisão melhorada utiliza conexões próximas (como Wi-Fi e Bluetooth) para referenciar geograficamente sua posição exata no museu.",
-        lang_name: "Português",
-        desc_apagar: "Você está prestes a apagar o progresso da trilha. Isso não pode ser desfeito.",
-        desc_limpar: "Você está prestes a limpar a coleção desbloqueada. Isso não pode ser desfeito.",
-        faq_q1: "Como funcionam as estações?",
-        faq_a1: "Cada estação possui um QR code ou identificação. Aproxime-se para registrar a visita.",
-        faq_q2: "O app funciona sem internet?",
-        faq_a2: "Sim! O progresso é salvo e sincronizado quando houver rede disponível.",
-        faq_q3: "Quanto custa o ingresso?",
-        faq_a3: "Visita espontânea: gratuito. Visita agendada em grupo: R$ 12,00. Descontos para instituições públicas. Isentos: estudantes/professores UFMG e acima de 60 anos.",
-        faq_q4: "É necessário agendar visita?",
-        faq_a4: "Para grupos com mais de 10 pessoas é indispensável. Para visitas individuais ou espontâneas, não é necessário.",
-        faq_q5: "Por que o agendamento é indispensável?",
-        faq_a5: "Para garantir a segurança, organização e não impactar a capacidade limitada dos espaços fechados.",
-        faq_q6: "Qual o horário de funcionamento?",
-        faq_a6: "Quarta a sábado: 8h30 às 16h (permanência até 17h). Fechado em feriados nacionais e municipais.",
-        faq_q7: "Como chegar ao MHNJB?",
-        faq_a7: "Endereço: Rua Gustavo da Silveira, 1035 - Santa Inês. Metrô: Estação Santa Inês. Ônibus: 4802A, 8001A, 9105, 9205, 9402.",
-        continue_trail: "CONTINUE PELA TRILHA",
-        click_expand: "CLIQUE PARA EXPANDIR"
+        slogan: "EXPLORE O MHNJB COM AS ABELHAS!", 
+        start_trail: "COMEÇAR TRILHA", 
+        trail_started: "INÍCIO DA TRILHA", 
+        go_to_gate: "VÁ ATÉ A PORTARIA 1 DO MHNJB", 
+        nav_trail: "Trilha", 
+        nav_discover: "Desafio", 
+        nav_collection: "Coleção", 
+        nav_mhnjb: "MHNJB", 
+        nav_faq: "Perguntas Frequentes", 
+        menu_sub: "Explore o MHNJB com as abelhas", 
+        menu_info: "Informações", 
+        settings_title: "Configurações", 
+        set_sys: "SISTEMA", 
+        set_eco: "Modo Econômico", 
+        set_gps: "GPS e Localização", 
+        set_vib: "VIBRAÇÃO", 
+        set_haptic: "Feedback tátil", 
+        set_pref: "PREFERÊNCIAS", 
+        set_lang: "Idioma", 
+        set_data: "GERENCIAR DADOS", 
+        set_reset_trail: "Apagar Progresso da Trilha", 
+        set_reset_col: "Limpar Coleção Desbloqueada", 
+        modal_sure: "Tem certeza?", 
+        modal_no: "Não", 
+        modal_yes: "Sim, apagar", 
+        eco_title: "Modo Econômico", 
+        eco_anim: "Reduzir animações", 
+        eco_desc: "Ativar esta opção reduz os efeitos visuais para economizar bateria.", 
+        gps_title: "Localização", 
+        gps_allow: "Permitir acesso à localização", 
+        gps_prec: "Melhorar precisão da localização", 
+        gps_desc: "A precisão melhorada utiliza conexões próximas (como Wi-Fi e Bluetooth) para referenciar geograficamente sua posição exata no museu.", 
+        lang_name: "Português", 
+        desc_apagar: "Você está prestes a apagar o progresso da trilha. Isso não pode ser desfeito.", 
+        desc_limpar: "Você está prestes a limpar a coleção desbloqueada. Isso não pode ser desfeito.", 
+        faq_q1: "Como funcionam as estações?", 
+        faq_a1: "Cada estação possui um QR code ou identificação. Aproxime-se para registrar a visita.", 
+        faq_q2: "O app funciona sem internet?", 
+        faq_a2: "Sim! O progresso é salvo e sincronizado quando houver rede disponível.", 
+        faq_q3: "Quanto custa o ingresso?", 
+        faq_a3: "Visita espontânea: gratuito. Visita agendada em grupo: R$ 12,00. Descontos para instituições públicas. Isentos: estudantes/professores UFMG e acima de 60 anos.", 
+        faq_q4: "É necessário agendar visita?", 
+        faq_a4: "Para grupos com mais de 10 pessoas é indispensável. Para visitas individuais ou espontâneas, não é necessário.", 
+        faq_q5: "Por que o agendamento é indispensável?", 
+        faq_a5: "Para garantir a segurança, organização e não impactar a capacidade limitada dos espaços fechados.", 
+        faq_q6: "Qual o horário de funcionamento?", 
+        faq_a6: "Quarta a sábado: 8h30 às 16h (permanência até 17h). Fechado em feriados nacionais e municipais.", 
+        faq_q7: "Como chegar ao MHNJB?", 
+        faq_a7: "Endereço: Rua Gustavo da Silveira, 1035 - Santa Inês. Metrô: Estação Santa Inês. Ônibus: 4802A, 8001A, 9105, 9205, 9402.", 
+        continue_trail: "CONTINUE PELA TRILHA", 
+        click_expand: "CLIQUE PARA EXPANDIR", 
+        menu_sec: "Segurança e Orientações", 
+        made_with: "Feito com", 
+        in_bh: "em Belo Horizonte - MG", 
+        acc_title: "Acessibilidade", 
+        acc_sub: "Torne sua experiência mais confortável.", 
+        acc_size: "TAMANHO DO TEXTO", 
+        acc_contrast: "CONTRASTE", 
+        acc_cont_def: "Padrão", 
+        acc_cont_high: "Alto contraste", 
+        acc_map: "APARÊNCIA DO MAPA", 
+        acc_map_light: "Claro", 
+        acc_map_dark: "Escuro", 
+        acc_map_sys: "Sistema", 
+        acc_bold: "Texto em negrito", 
+        acc_motion: "Reduzir movimento", 
+        layer_title: "Pontos de interesse", 
+        layer_sub: "Conheça os locais no mapa.", 
+        cat_expo: "Exposições", 
+        cat_bees: "Abelhas", 
+        cat_trees: "Árvores Notáveis", 
+        cat_gardens: "Jardins Especiais", 
+        cat_leisure: "Lazer", 
+        cat_canteen: "Cantina", 
+        cat_water: "Bebedouros", 
+        cat_restroom: "Sanitários", 
+        cat_gate: "Portarias", 
+        info_help: "AJUDA", 
+        info_how_map: "Como usar o mapa", 
+        sec_title: "Segurança", 
+        sec_group: "SEGURANÇA E ORIENTAÇÃO", 
+        sec_1: "Leve repelente", 
+        sec_2: "Use protetor solar", 
+        sec_3: "Não toque nas caixas de abelha", 
+        sec_4: "Não coletar plantas ou itens", 
+        sec_5: "Mantenha silêncio e respeite", 
+        sec_6: "Calçado fechado e calças", 
+        sec_7: "Se necessário, procure ajuda", 
+        toast_far: "Ops, parece que você está longe. Use essa opção quando estiver no MHNJB.", 
+        toast_gps_denied: "Permita a localização no navegador para centralizar.", 
+        toast_trail_cleared: "Progresso da Trilha apagado.", 
+        toast_col_cleared: "Coleção inteira limpa com sucesso.",
+        mhnjb_tag: "MHNJB - ESPAÇO DE SABERES", 
+        mhnjb_title: "Museu de História Natural e Jardim Botânico da UFMG", 
+        mhnjb_func_title: "Funcionamento", 
+        mhnjb_func_text: "Quarta a sábado, das 8h30 às 16h (permanência até as 17h). Fechado em feriados.", 
+        mhnjb_ent_title: "Entrada", 
+        mhnjb_ent_text: "Visita espontânea gratuita. Grupos com mais de 10 pessoas exigem agendamento prévio.", 
+        mhnjb_site: "VISITAR O SITE OFICIAL", 
+        mhnjb_hist_title: "HISTÓRIA E MISSÃO", 
+        mhnjb_hist_p1: "Situado na cidade de Belo Horizonte/MG e fundado em 1969, o Museu de História Natural e Jardim Botânico da UFMG tem a missão de ser um espaço de encontro de saberes, com o objetivo de contribuir para a construção de conhecimentos sobre o patrimônio cultural e ambiental por meio da valorização de suas coleções, ações educativas, exposições e pesquisa.", 
+        mhnjb_hist_p2: "É aberto à visitação, onde o público encontra exposições nas áreas de Arqueologia, Botânica, Cartografia Histórica, Documentação Bibliográfica e Arquivística, o Presépio do Pipiripau, trilhas na mata, fauna e flora local, e muito mais.", 
+        poi_visited: "Visitado", 
+        poi_mark_visited: "Marcar como visitado", 
+        poi_see_more: "Ver mais", 
+        poi_bee_house: "Casa de abelha", 
+        poi_bee_hotel: "Hotel para abelhas solitárias", 
+        poi_meliponary: "Meliponário",
+        col_tab_all: "Todos",
+        col_tab_bees: "Abelhas",
+        col_tab_expo: "Exposições",
+        col_tab_others: "Outros",
+        col_logbook: "MEU DIÁRIO DE BORDO",
+        col_discovered: "descobertos",
+        col_of: "de",
+        game_tab_quiz: "Quiz: Abelhas",
+        game_tab_cur: "Curiosidades MHNJB",
+        game_cards: "cartas",
+        game_title_quiz: "DESAFIO DAS ABELHAS",
+        game_sub_quiz: "Teste seus conhecimentos!",
+        game_title_cur: "CURIOSIDADES MHNJB",
+        game_sub_cur: "Deslize e descubra",
+        exit_q: "Deseja sair da navegação na trilha?",
+        exit_cont: "Continuar",
+        exit_leave: "Sair",
+        trail_congrats: "PARABÉNS!",
+        trail_completed: "Você completou a trilha.",
+        trail_enjoy: "Desfrute outros espaços do museu MHNJB.",
+        trail_exit_btn: "SAIR"
     },
     en: {
-        slogan: "EXPLORE THE MHNJB WITH THE BEES!",
-        start_trail: "START TRAIL",
-        trail_started: "TRAIL START",
-        go_to_gate: "GO TO GATE 1 OF MHNJB",
-        nav_trail: "Trail",
-        nav_discover: "Discover",
-        nav_collection: "Collection",
-        nav_mhnjb: "MHNJB",
-        nav_faq: "FAQ",
-        menu_sub: "Explore the MHNJB with the bees",
-        menu_info: "Information",
-        settings_title: "Settings",
-        set_sys: "SYSTEM",
-        set_eco: "Power Saving",
-        set_gps: "GPS & Location",
-        set_vib: "VIBRATION",
-        set_haptic: "Haptic Feedback",
-        set_pref: "PREFERENCES",
-        set_lang: "Language",
-        set_data: "MANAGE DATA",
-        set_reset_trail: "Delete Trail Progress",
-        set_reset_col: "Clear Unlocked Collection",
-        modal_sure: "Are you sure?",
-        modal_no: "No",
-        modal_yes: "Yes, delete",
-        eco_title: "Power Saving",
-        eco_anim: "Reduce animations",
-        eco_desc: "Enabling this option reduces visual effects to save battery life.",
-        gps_title: "Location",
-        gps_allow: "Allow location access",
-        gps_prec: "Improve location accuracy",
-        gps_desc: "Improved accuracy uses nearby connections (like Wi-Fi and Bluetooth) to geographically reference your exact position in the museum.",
-        lang_name: "English",
-        desc_apagar: "You are about to delete your trail progress. This cannot be undone.",
-        desc_limpar: "You are about to clear your unlocked collection. This cannot be undone.",
-        faq_q1: "How do the stations work?",
-        faq_a1: "Each station has a QR code or ID. Approach to register your visit.",
-        faq_q2: "Does the app work offline?",
-        faq_a2: "Yes! Progress is saved and synced when network is available.",
-        faq_q3: "How much is the ticket?",
-        faq_a3: "Spontaneous visit: free. Group visit: R$ 12.00. Discounts for public institutions. Exempt: UFMG students/staff and over 60s.",
-        faq_q4: "Is booking necessary?",
-        faq_a4: "Mandatory for groups over 10 people. Not required for individuals.",
-        faq_q5: "Why is booking mandatory?",
-        faq_a5: "To ensure safety, organization, and avoid overcapacity in indoor spaces.",
-        faq_q6: "What are the opening hours?",
-        faq_a6: "Wed to Sat: 8:30 am to 4:00 pm (stay until 5 pm). Closed on holidays.",
-        faq_q7: "How to get to MHNJB?",
-        faq_a7: "Address: Rua Gustavo da Silveira, 1035 - Santa Inês. Metro: Santa Inês Station. Buses: 4802A, 8001A, 9105, 9205, 9402.",
-        continue_trail: "CONTINUE ON TRAIL",
-        click_expand: "CLICK TO EXPAND"
+        slogan: "EXPLORE THE MHNJB WITH THE BEES!", 
+        start_trail: "START TRAIL", 
+        trail_started: "TRAIL START", 
+        go_to_gate: "GO TO GATE 1 OF MHNJB", 
+        nav_trail: "Trail", 
+        nav_discover: "Discover", 
+        nav_collection: "Collection", 
+        nav_mhnjb: "MHNJB", 
+        nav_faq: "FAQ", 
+        menu_sub: "Explore the MHNJB with the bees", 
+        menu_info: "Information", 
+        settings_title: "Settings", 
+        set_sys: "SYSTEM", 
+        set_eco: "Power Saving", 
+        set_gps: "GPS & Location", 
+        set_vib: "VIBRATION", 
+        set_haptic: "Haptic Feedback", 
+        set_pref: "PREFERENCES", 
+        set_lang: "Language", 
+        set_data: "MANAGE DATA", 
+        set_reset_trail: "Delete Trail Progress", 
+        set_reset_col: "Clear Unlocked Collection", 
+        modal_sure: "Are you sure?", 
+        modal_no: "No", 
+        modal_yes: "Yes, delete", 
+        eco_title: "Power Saving", 
+        eco_anim: "Reduce animations", 
+        eco_desc: "Enabling this option reduces visual effects to save battery life.", 
+        gps_title: "Location", 
+        gps_allow: "Allow location access", 
+        gps_prec: "Improve location accuracy", 
+        gps_desc: "Improved accuracy uses nearby connections (like Wi-Fi and Bluetooth) to geographically reference your exact position in the museum.", 
+        lang_name: "English", 
+        desc_apagar: "You are about to delete your trail progress. This cannot be undone.", 
+        desc_limpar: "You are about to clear your unlocked collection. This cannot be undone.", 
+        faq_q1: "How do the stations work?", 
+        faq_a1: "Each station has a QR code or ID. Approach to register your visit.", 
+        faq_q2: "Does the app work offline?", 
+        faq_a2: "Yes! Progress is saved and synced when network is available.", 
+        faq_q3: "How much is the ticket?", 
+        faq_a3: "Spontaneous visit: free. Group visit: R$ 12.00. Discounts for public institutions. Exempt: UFMG students/staff and over 60s.", 
+        faq_q4: "Is booking necessary?", 
+        faq_a4: "Mandatory for groups over 10 people. Not required for individuals.", 
+        faq_q5: "Why is booking mandatory?", 
+        faq_a5: "To ensure safety, organization, and avoid overcapacity in indoor spaces.", 
+        faq_q6: "What are the opening hours?", 
+        faq_a6: "Wed to Sat: 8:30 am to 4:00 pm (stay until 5 pm). Closed on holidays.", 
+        faq_q7: "How to get to MHNJB?", 
+        faq_a7: "Address: Rua Gustavo da Silveira, 1035 - Santa Inês. Metro: Santa Inês Station. Buses: 4802A, 8001A, 9105, 9205, 9402.", 
+        continue_trail: "CONTINUE ON TRAIL", 
+        click_expand: "CLICK TO EXPAND", 
+        menu_sec: "Safety & Guidelines", 
+        made_with: "Made with", 
+        in_bh: "in Belo Horizonte - MG", 
+        acc_title: "Accessibility", 
+        acc_sub: "Make your experience more comfortable.", 
+        acc_size: "TEXT SIZE", 
+        acc_contrast: "CONTRAST", 
+        acc_cont_def: "Default", 
+        acc_cont_high: "High contrast", 
+        acc_map: "MAP APPEARANCE", 
+        acc_map_light: "Light", 
+        acc_map_dark: "Dark", 
+        acc_map_sys: "System", 
+        acc_bold: "Bold text", 
+        acc_motion: "Reduce motion", 
+        layer_title: "Points of Interest", 
+        layer_sub: "Discover places on the map.", 
+        cat_expo: "Exhibitions", 
+        cat_bees: "Bees", 
+        cat_trees: "Notable Trees", 
+        cat_gardens: "Special Gardens", 
+        cat_leisure: "Leisure", 
+        cat_canteen: "Canteen", 
+        cat_water: "Water Fountains", 
+        cat_restroom: "Restrooms", 
+        cat_gate: "Gates", 
+        info_help: "HELP", 
+        info_how_map: "How to use the map", 
+        sec_title: "Safety", 
+        sec_group: "SAFETY AND GUIDELINES", 
+        sec_1: "Bring insect repellent", 
+        sec_2: "Use sunscreen", 
+        sec_3: "Do not touch the bee boxes", 
+        sec_4: "Do not collect plants or items", 
+        sec_5: "Keep quiet and be respectful", 
+        sec_6: "Wear closed shoes and pants", 
+        sec_7: "Seek help if necessary", 
+        toast_far: "Oops, it seems you are far away. Use this option when at MHNJB.", 
+        toast_gps_denied: "Allow location access in your browser to center the map.", 
+        toast_trail_cleared: "Trail progress deleted.", 
+        toast_col_cleared: "Collection successfully cleared.",
+        mhnjb_tag: "MHNJB - SPACE OF KNOWLEDGE", 
+        mhnjb_title: "Museu de História Natural e Jardim Botânico da UFMG", 
+        mhnjb_func_title: "Hours", 
+        mhnjb_func_text: "Wednesday to Saturday, 8:30 AM to 4:00 PM (stay until 5:00 PM). Closed on holidays.", 
+        mhnjb_ent_title: "Admission", 
+        mhnjb_ent_text: "Free spontaneous visit. Groups with more than 10 people require prior scheduling.", 
+        mhnjb_site: "VISIT OFFICIAL WEBSITE", 
+        mhnjb_hist_title: "HISTORY AND MISSION", 
+        mhnjb_hist_p1: "Located in the city of Belo Horizonte/MG and founded in 1969, the Museu de História Natural e Jardim Botânico da UFMG has the mission to be a space for the meeting of knowledge, aiming to contribute to the construction of knowledge about cultural and environmental heritage through the valuation of its collections, educational actions, exhibitions, and research.", 
+        mhnjb_hist_p2: "It is open to the public, where visitors can find exhibitions in the areas of Archaeology, Botany, Historical Cartography, Bibliographic and Archival Documentation, the Pipiripau Nativity Scene, forest trails, local fauna and flora, and much more.", 
+        poi_visited: "Visited", 
+        poi_mark_visited: "Mark as visited", 
+        poi_see_more: "See more", 
+        poi_bee_house: "Bee house", 
+        poi_bee_hotel: "Solitary bee hotel", 
+        poi_meliponary: "Meliponário",
+        col_tab_all: "All",
+        col_tab_bees: "Bees",
+        col_tab_expo: "Exhibitions",
+        col_tab_others: "Others",
+        col_logbook: "MY LOGBOOK",
+        col_discovered: "discovered",
+        col_of: "of",
+        game_tab_quiz: "Quiz: Bees",
+        game_tab_cur: "MHNJB Curiosities",
+        game_cards: "cards",
+        game_title_quiz: "BEE QUIZ",
+        game_sub_quiz: "Test your knowledge!",
+        game_title_cur: "MHNJB CURIOSITIES",
+        game_sub_cur: "Swipe and discover",
+        exit_q: "Do you want to exit trail navigation?",
+        exit_cont: "Continue",
+        exit_leave: "Exit",
+        trail_congrats: "CONGRATULATIONS!",
+        trail_completed: "You completed the trail.",
+        trail_enjoy: "Enjoy other areas of the MHNJB museum.",
+        trail_exit_btn: "EXIT"
     },
     es: {
-        slogan: "¡EXPLORA EL MHNJB CON LAS ABEJAS!",
-        start_trail: "COMENZAR RUTA",
-        trail_started: "INICIO DE LA RUTA",
-        go_to_gate: "VE A LA ENTRADA 1 DEL MHNJB",
-        nav_trail: "Ruta",
-        nav_discover: "Descubrir",
-        nav_collection: "Colección",
-        nav_mhnjb: "MHNJB",
-        nav_faq: "FAQ",
-        menu_sub: "Explora el MHNJB con las abejas",
-        menu_info: "Información",
-        settings_title: "Ajustes",
-        set_sys: "SISTEMA",
-        set_eco: "Modo Ahorro",
-        set_gps: "GPS y Ubicación",
-        set_vib: "VIBRACIÓN",
-        set_haptic: "Respuesta táctil",
-        set_pref: "PREFERENCIAS",
-        set_lang: "Idioma",
-        set_data: "GESTIONAR DATOS",
-        set_reset_trail: "Borrar Progreso de Ruta",
-        set_reset_col: "Limpar Colección Desbloqueada",
-        modal_sure: "¿Estás seguro?",
-        modal_no: "No",
-        modal_yes: "Sí, borrar",
-        eco_title: "Modo Ahorro",
-        eco_anim: "Reducir animaciones",
-        eco_desc: "Activar esta opción reduce los efectos visuales para ahorrar batería.",
-        gps_title: "Ubicación",
-        gps_allow: "Permitir acceso a ubicación",
-        gps_prec: "Mejorar precisión de ubicación",
-        gps_desc: "La precisión mejorada utiliza conexiones cercanas (como Wi-Fi e Bluetooth) para referenciar geográficamente tu posición exacta en el museo.",
-        lang_name: "Español",
-        desc_apagar: "Estás a punto de borrar el progreso de la ruta. Esto no se puede deshacer.",
-        desc_limpar: "Estás a punto de limpiar la colección desbloqueada. Esto no se puede deshacer.",
-        faq_q1: "¿Cómo funcionan las estaciones?",
-        faq_a1: "Cada estación tiene un código QR o identificación. Acércate para registrar la visita.",
-        faq_q2: "¿La aplicación funciona sin internet?",
-        faq_a2: "¡Sí! El progreso se guarda y sincroniza cuando hay red disponible.",
-        faq_q3: "¿Cuánto cuesta la entrada?",
-        faq_a3: "Visita espontánea: gratis. Grupos: R$ 12,00. Descuentos para instituciones públicas. Exentos: estudiantes/personal UFMG y mayores de 60 años.",
-        faq_q4: "¿Es necesario reservar?",
-        faq_a4: "Obligatorio para grupos de más de 10 personas. No es necesario para individuos.",
-        faq_q5: "¿Por qué es obligatorio reservar?",
-        faq_a5: "Para garantizar la seguridad, organización y evitar el exceso de capacidad en espacios cerrados.",
-        faq_q6: "¿Cuál es el horario de atención?",
-        faq_a6: "Mié a Sáb: 8:30 a 16:00 (permanencia hasta las 17:00). Cerrado los festivos.",
-        faq_q7: "¿Como chegar al MHNJB?",
-        faq_a7: "Dirección: Rua Gustavo da Silveira, 1035 - Santa Inês. Metro: Estación Santa Inês. Autobuses: 4802A, 8001A, 9105, 9205, 9402.",
-        continue_trail: "CONTINÚE EN LA RUTA",
-        click_expand: "CLIC PARA EXPANDIR"
+        slogan: "¡EXPLORA EL MHNJB CON LAS ABEJAS!", 
+        start_trail: "COMENZAR RUTA", 
+        trail_started: "INICIO DE LA RUTA", 
+        go_to_gate: "VE A LA ENTRADA 1 DEL MHNJB", 
+        nav_trail: "Ruta", 
+        nav_discover: "Descubrir", 
+        nav_collection: "Colección", 
+        nav_mhnjb: "MHNJB", 
+        nav_faq: "FAQ", 
+        menu_sub: "Explora el MHNJB con las abejas", 
+        menu_info: "Información", 
+        settings_title: "Ajustes", 
+        set_sys: "SISTEMA", 
+        set_eco: "Modo Ahorro", 
+        set_gps: "GPS y Ubicación", 
+        set_vib: "VIBRACIÓN", 
+        set_haptic: "Respuesta táctil", 
+        set_pref: "PREFERENCIAS", 
+        set_lang: "Idioma", 
+        set_data: "GESTIONAR DATOS", 
+        set_reset_trail: "Borrar Progreso de Ruta", 
+        set_reset_col: "Limpar Colección Desbloqueada", 
+        modal_sure: "¿Estás seguro?", 
+        modal_no: "No", 
+        modal_yes: "Sí, borrar", 
+        eco_title: "Modo Ahorro", 
+        eco_anim: "Reducir animaciones", 
+        eco_desc: "Activar esta opción reduce los efectos visuales para ahorrar batería.", 
+        gps_title: "Ubicación", 
+        gps_allow: "Permitir acceso a ubicación", 
+        gps_prec: "Mejorar precisión de ubicación", 
+        gps_desc: "La precisión mejorada utiliza conexiones cercanas (como Wi-Fi e Bluetooth) para referenciar geográficamente tu posición exacta en el museo.", 
+        lang_name: "Español", desc_apagar: "Estás a punto de borrar el progreso de la ruta. Esto no se puede deshacer.", 
+        desc_limpar: "Estás a punto de limpiar la colección desbloqueada. Esto no se puede deshacer.", 
+        faq_q1: "¿Cómo funcionan las estaciones?", 
+        faq_a1: "Cada estación tiene un código QR o identificación. Acércate para registrar la visita.", 
+        faq_q2: "¿La aplicación funciona sin internet?", 
+        faq_a2: "¡Sí! El progreso se guarda y sincroniza cuando hay red disponible.", 
+        faq_q3: "¿Cuánto cuesta la entrada?", 
+        faq_a3: "Visita espontánea: gratis. Grupos: R$ 12,00. Descuentos para instituciones públicas. Exentos: estudiantes/personal UFMG y mayores de 60 años.", 
+        faq_q4: "¿Es necesario reservar?", 
+        faq_a4: "Obligatorio para grupos de más de 10 personas. No es necesario para individuos.", 
+        faq_q5: "¿Por qué es obligatorio reservar?", 
+        faq_a5: "Para garantizar la seguridad, organización y evitar el exceso de capacidad en espacios cerrados.", 
+        faq_q6: "¿Cuál es el horario de atención?", 
+        faq_a6: "Mié a Sáb: 8:30 a 16:00 (permanencia hasta las 17:00). Cerrado los festivos.", 
+        faq_q7: "¿Como chegar al MHNJB?", 
+        faq_a7: "Dirección: Rua Gustavo da Silveira, 1035 - Santa Inês. Metro: Estación Santa Inês. Autobuses: 4802A, 8001A, 9105, 9205, 9402.", 
+        continue_trail: "CONTINÚE EN LA RUTA", 
+        click_expand: "CLIC PARA EXPANDIR", 
+        menu_sec: "Seguridad y Pautas", 
+        made_with: "Hecho con", 
+        in_bh: "en Belo Horizonte - MG", 
+        acc_title: "Accesibilidad", 
+        acc_sub: "Haz tu experiencia más cómoda.", 
+        acc_size: "TAMAÑO DEL TEXTO", 
+        acc_contrast: "CONTRASTE", 
+        acc_cont_def: "Predeterminado", 
+        acc_cont_high: "Alto contraste", 
+        acc_map: "APARIENCIA DEL MAPA", 
+        acc_map_light: "Claro", 
+        acc_map_dark: "Oscuro", 
+        acc_map_sys: "Sistema", 
+        acc_bold: "Texto en negrita", 
+        acc_motion: "Reducir movimiento", 
+        layer_title: "Puntos de Interés", 
+        layer_sub: "Descubre lugares en el mapa.", 
+        cat_expo: "Exposiciones", 
+        cat_bees: "Abejas", 
+        cat_trees: "Árboles Notables", 
+        cat_gardens: "Jardines Especiales", 
+        cat_leisure: "Ocio", 
+        cat_canteen: "Cantina", 
+        cat_water: "Bebederos", 
+        cat_restroom: "Baños", 
+        cat_gate: "Portones", 
+        info_help: "AYUDA", 
+        info_how_map: "Cómo usar el mapa", 
+        sec_title: "Seguridad", 
+        sec_group: "SEGURIDAD Y PAUTAS", 
+        sec_1: "Lleva repelente de insectos", 
+        sec_2: "Usa protector solar", 
+        sec_3: "No toques las cajas de abejas", 
+        sec_4: "No recolectes plantas ni objetos", 
+        sec_5: "Guarda silencio y respeta", 
+        sec_6: "Usa zapatos cerrados y pantalones", 
+        sec_7: "Busca ayuda si es necesario", 
+        toast_far: "Ups, parece que estás lejos. Usa esta opción cuando estés en el MHNJB.", 
+        toast_gps_denied: "Permite la ubicación en el navegador para centrar el mapa.", 
+        toast_trail_cleared: "Progreso de la ruta borrado.", 
+        toast_col_cleared: "Colección limpiada con éxito.",
+        mhnjb_tag: "MHNJB - ESPACIO DE SABERES", 
+        mhnjb_title: "Museu de História Natural e Jardim Botânico da UFMG", 
+        mhnjb_func_title: "Horario", 
+        mhnjb_func_text: "Miércoles a sábado, de 8:30 a 16:00 (permanencia hasta las 17:00). Cerrado los festivos.", 
+        mhnjb_ent_title: "Entrada", 
+        mhnjb_ent_text: "Visita espontánea gratuita. Grupos con más de 10 personas requieren reserva previa.", 
+        mhnjb_site: "VISITAR SITIO WEB OFICIAL", 
+        mhnjb_hist_title: "HISTORIA Y MISIÓN", 
+        mhnjb_hist_p1: "Ubicado en la ciudad de Belo Horizonte/MG y fundado en 1969, el Museu de História Natural e Jardim Botânico da UFMG tiene la misión de ser un espacio de encuentro de saberes, con el objetivo de contribuir a la construcción de conocimientos sobre el patrimonio cultural y ambiental mediante la valorización de sus colecciones, acciones educativas, exposiciones y encuestas.", 
+        mhnjb_hist_p2: "Está abierto al público, donde los visitantes pueden encontrar exposiciones en las áreas de Arqueología, Botánica, Cartografía Histórica, Documentación Bibliográfica y Archivística, el Pesebre de Pipiripau, senderos en el bosque, fauna y flora local, y mucho más.", 
+        poi_visited: "Visitado", 
+        poi_mark_visited: "Marcar como visitado", 
+        poi_see_more: "Ver más", 
+        poi_bee_house: "Casa de abeja", 
+        poi_bee_hotel: "Hotel para abejas solitarias", 
+        poi_meliponary: "Meliponário",
+        col_tab_all: "Todos",
+        col_tab_bees: "Abejas",
+        col_tab_expo: "Exposiciones",
+        col_tab_others: "Otros",
+        col_logbook: "MI DIARIO DE A BORDO",
+        col_discovered: "descubiertos",
+        col_of: "de",
+        game_tab_quiz: "Quiz: Abejas",
+        game_tab_cur: "Curiosidades MHNJB",
+        game_cards: "cartas",
+        game_title_quiz: "DESAFÍO DE ABEJAS",
+        game_sub_quiz: "¡Prueba tus conocimientos!",
+        game_title_cur: "CURIOSIDADES MHNJB",
+        game_sub_cur: "Desliza y descubre",
+        exit_q: "¿Deseas salir de la navegación de la ruta?",
+        exit_cont: "Continuar",
+        exit_leave: "Salir",
+        trail_congrats: "¡FELICIDADES!",
+        trail_completed: "Completaste la ruta.",
+        trail_enjoy: "Disfruta de otros espacios del museo MHNJB.",
+        trail_exit_btn: "SALIR"
     }
 };
 
@@ -701,7 +934,8 @@ modalConfirm?.addEventListener('click', () => {
                 marcadoresNoMapa[nome].setIcon(criarIconeGeografico(nome, 'pending'));
             }
         });
-        mostrarToastAviso("Progresso da Trilha apagado.");
+        const lang = localStorage.getItem('beezita_lang') || 'pt';
+        mostrarToastAviso(dicionario[lang].toast_trail_cleared);
         resetarTrilha(); // Devolve a UI da trilha ao estado inicial
 
     } else if (acao === 'limpar') {
@@ -722,7 +956,8 @@ modalConfirm?.addEventListener('click', () => {
                 marcadoresNoMapa[nome].setIcon(criarIconeGeografico(nome, 'pending'));
             }
         });
-        mostrarToastAviso("Coleção inteira limpa com sucesso.");
+        const lang = localStorage.getItem('beezita_lang') || 'pt';
+        mostrarToastAviso(dicionario[lang].toast_col_cleared);
         resetarTrilha();
     }
     
@@ -1455,20 +1690,30 @@ function inicializarMapaReal() {
                 const isExcludedPOI = nomeLower.includes("bebedouro") || nomeLower.includes("sanitário") || nomeLower.includes("portaria");
                 const isBeeStation = nome.includes("Casa") || nome.includes("Hotel") || nome.includes("Meliponário");
 
-                let popupContent = `<div class="popup-poi-container"><strong style="color: #333; font-size: 0.85rem;">${nomeExibicao}</strong>`;
+                // Inteligência de tradução de nomes compostos
+                let tituloTraduzidoHTML = nomeExibicao;
+                if (nome.startsWith("Casa de abelha")) {
+                    const num = nome.replace(/\D/g, ''); // Isola o número ("4")
+                    tituloTraduzidoHTML = `<span data-i18n="poi_bee_house">Casa de abelha</span> ${num}`;
+                } else if (nome === "Hotel para abelhas solitárias") {
+                    tituloTraduzidoHTML = `<span data-i18n="poi_bee_hotel">Hotel para abelhas solitárias</span>`;
+                } else if (nome === "Meliponário") {
+                    tituloTraduzidoHTML = `<span data-i18n="poi_meliponary">Meliponário</span>`;
+                }
+
+                let popupContent = `<div class="popup-poi-container"><strong style="color: #333; font-size: 0.85rem;">${tituloTraduzidoHTML}</strong>`;
 
                 if (!isExcludedPOI) {
                     const isVisited = localStorage.getItem(`poi_visited_${safeName}`) === 'true';
-                    
                     if (isVisited) {
-                        popupContent += `<button class="poi-visit-btn visited" onclick="window.togglePoiVisit(this, '${safeName}')">Visitado <i class="bi bi-check-lg"></i></button>`;
+                        popupContent += `<button class="poi-visit-btn visited" onclick="window.togglePoiVisit(this, '${safeName}')"><span data-i18n="poi_visited">Visitado</span> <i class="bi bi-check-lg"></i></button>`;
                     } else {
-                        popupContent += `<button class="poi-visit-btn" onclick="window.togglePoiVisit(this, '${safeName}')">Marcar como visitado</button>`;
+                        popupContent += `<button class="poi-visit-btn" onclick="window.togglePoiVisit(this, '${safeName}')"><span data-i18n="poi_mark_visited">Marcar como visitado</span></button>`;
                     }
                 }
 
                 if (isBeeStation) {
-                    popupContent += `<span class="poi-ver-mais" onclick="window.abrirRecompensaAvulsa('${nome}')">Ver mais</span>`;
+                    popupContent += `<span class="poi-ver-mais" onclick="window.abrirRecompensaAvulsa('${nome}')" data-i18n="poi_see_more">Ver mais</span>`;
                 }
                 
                 popupContent += `</div>`;
@@ -1552,6 +1797,8 @@ function inicializarMapaReal() {
         const popupNode = e.popup._contentNode;
         if (!popupNode) return;
         
+        const lang = localStorage.getItem('beezita_lang') || 'pt';
+        
         const btn = popupNode.querySelector('.poi-visit-btn');
         if (btn) {
             const match = btn.getAttribute('onclick').match(/'([^']+)'/);
@@ -1561,13 +1808,16 @@ function inicializarMapaReal() {
                 
                 if (isVisited) {
                     btn.classList.add('visited');
-                    btn.innerHTML = 'Visitado <i class="bi bi-check-lg"></i>';
+                    btn.innerHTML = `<span data-i18n="poi_visited">${dicionario[lang].poi_visited || "Visitado"}</span> <i class="bi bi-check-lg"></i>`;
                 } else {
                     btn.classList.remove('visited');
-                    btn.innerHTML = 'Marcar como visitado';
+                    btn.innerHTML = `<span data-i18n="poi_mark_visited">${dicionario[lang].poi_mark_visited || "Marcar como visitado"}</span>`;
                 }
             }
         }
+        
+        // MÁGICA: Manda traduzir qualquer tag data-i18n dentro do balão que acabou de nascer
+        aplicarIdioma(lang);
     });
 
     setTimeout(() => mapaTrilha.invalidateSize(), 500);
@@ -1762,14 +2012,20 @@ function iniciarConclusao() {
     pPanel.classList.add('contracted');
     
     setTimeout(() => {
-        if (bNext) bNext.style.display = 'none'; // Agora sim ocultamos ele, dando espaço pro botão Sair
+        if (bNext) bNext.style.display = 'none'; // Botão ocultado dando espaço pro botão Sair
         
         // --- EFEITO PULSANTE E INCANDESCENTE APLICADO NO H2 ---
+        const lang = localStorage.getItem('beezita_lang') || 'pt';
+        const txtCongrats = dicionario[lang].trail_congrats || "PARABÉNS!";
+        const txtComp = dicionario[lang].trail_completed || "Você completou a trilha.";
+        const txtEnjoy = dicionario[lang].trail_enjoy || "Desfrute outros espaços do museu MHNJB.";
+        const txtSair = dicionario[lang].trail_exit_btn || "SAIR";
+
         progressInfo.innerHTML = `
             <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; width: 100%; height: 100%; min-height: 85px;">
-                <h2 style="color: var(--honey-yellow); font-size: 1.1rem; margin-bottom: 2px; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; animation: smooth-blink 2s ease-in-out infinite; text-shadow: 0 0 8px var(--glow-yellow);">PARABÉNS!</h2>
-                <p style="color: var(--warm-cream); font-size: 0.8rem; margin-bottom: 4px; text-transform: uppercase; font-weight: 600;">Você completou a trilha.</p>
-                <p style="color: var(--warm-cream); font-size: 0.75rem; opacity: 0.8; font-weight: 400; line-height: 1.2;">Desfrute outros espaços do museu MHNJB.</p>
+                <h2 style="color: var(--honey-yellow); font-size: 1.1rem; margin-bottom: 2px; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; animation: smooth-blink 2s ease-in-out infinite; text-shadow: 0 0 8px var(--glow-yellow);">${txtCongrats}</h2>
+                <p style="color: var(--warm-cream); font-size: 0.8rem; margin-bottom: 4px; text-transform: uppercase; font-weight: 600;">${txtComp}</p>
+                <p style="color: var(--warm-cream); font-size: 0.75rem; opacity: 0.8; font-weight: 400; line-height: 1.2;">${txtEnjoy}</p>
             </div>
         `;
         
@@ -1782,7 +2038,7 @@ function iniciarConclusao() {
 
         bTimer.innerHTML = `
             <span id="timer-text" style="font-size: 0.8rem; color: var(--warm-cream); font-weight: 700; font-variant-numeric: tabular-nums; text-align: right;">15s</span>
-            <span style="font-size: 0.8rem; font-weight: 700; color: var(--honey-yellow); margin-left: 5px;">SAIR</span>
+            <span style="font-size: 0.8rem; font-weight: 700; color: var(--honey-yellow); margin-left: 5px;">${txtSair}</span>
         `;
 
         let timeLeft = 15;
@@ -1900,12 +2156,16 @@ if (btnRecenter) {
                     if (limitesDoMuseu.contains(posicaoReal)) {
                         mapaTrilha.flyTo(posicaoReal, 18, { animate: true, duration: 1.2 });
                     } else {
-                        mostrarToastAviso("Ops, parece que você está longe. Use essa opção quando estiver no MHNJB.");
-                        // MAGIA AQUI: setView centraliza imediatamente o mapa na portaria SEM animação (evitando bater no limite e bugar o mapa)
+                        const lang = localStorage.getItem('beezita_lang') || 'pt';
+                        mostrarToastAviso(dicionario[lang].toast_far);
+                        // SetView centraliza imediatamente o mapa na portaria SEM animação (evitando bater no limite e bugar o mapa)
                         mapaTrilha.setView([-19.891008, -43.913492], 17);
                     }
                 },
-                (error) => { mostrarToastAviso("Permita a localização no navegador para centralizar."); },
+                (error) => { 
+                    const lang = localStorage.getItem('beezita_lang') || 'pt';
+                    mostrarToastAviso(dicionario[lang].toast_gps_denied); 
+                },
                 { enableHighAccuracy: true, timeout: 10000 }
             );
         } else {
@@ -2070,10 +2330,13 @@ function renderizarCartas() {
     const total = data.length;
     
     // Atualiza Progresso e Textos
-    document.getElementById('game-progress-text').innerText = `${gameState.index} / ${total} cartas`;
+    const lang = localStorage.getItem('beezita_lang') || 'pt';
+    const txtCartas = dicionario[lang].game_cards || "cartas";
+    
+    document.getElementById('game-progress-text').innerText = `${gameState.index} / ${total} ${txtCartas}`;
+    document.getElementById('game-header-title').innerText = gameState.mode === 'quiz' ? (dicionario[lang].game_title_quiz || 'QUIZ DAS ABELHAS') : (dicionario[lang].game_title_cur || 'CURIOSIDADES MHNJB');
+    document.getElementById('game-header-subtitle').innerText = gameState.mode === 'quiz' ? (dicionario[lang].game_sub_quiz || 'Teste seus conhecimentos!') : (dicionario[lang].game_sub_cur || 'Deslize e descubra');
     document.getElementById('game-progress-bar').style.width = `${(gameState.index / total) * 100}%`;
-    document.getElementById('game-header-title').innerText = gameState.mode === 'quiz' ? 'QUIZ DAS ABELHAS' : 'CURIOSIDADES MHNJB';
-    document.getElementById('game-header-subtitle').innerText = gameState.mode === 'quiz' ? 'Teste seus conhecimentos!' : 'Deslize e descubra';
 
     // Cria as 3 cartas (Front, Middle, Back) para o efeito 3D
     stack.innerHTML = '';
@@ -2368,7 +2631,10 @@ window.renderizarColecao = function() {
     const total = itemsVisiveis.length;
     const porcentagem = total === 0 ? 0 : Math.round((descobertosNoFiltroAtual / total) * 100);
     
-    document.getElementById('colecao-count-text').innerText = `${descobertosNoFiltroAtual} de ${total} descobertos`;
+    const lang = localStorage.getItem('beezita_lang') || 'pt';
+    const txtDe = dicionario[lang].col_of || "de";
+    const txtDesc = dicionario[lang].col_discovered || "descobertos";
+    document.getElementById('colecao-count-text').innerText = `${descobertosNoFiltroAtual} ${txtDe} ${total} ${txtDesc}`;
     document.getElementById('colecao-circle').style.background = `conic-gradient(var(--honey-yellow) ${porcentagem}%, rgba(255,255,255,0.05) 0)`;
     document.getElementById('colecao-circle').innerHTML = `<span>${porcentagem}%</span>`;
 }
@@ -2395,12 +2661,13 @@ window.togglePoiVisitGlobal = function(safeName) {
     // Atualiza o botão caso o popup do mapa esteja aberto agorinha
     const btnNoMapa = document.querySelector(`.poi-visit-btn[onclick*="${safeName}"]`);
     if (btnNoMapa) {
+        const lang = localStorage.getItem('beezita_lang') || 'pt';
         if (!isVisited) { // Se não estava, agora está
             btnNoMapa.classList.add('visited');
-            btnNoMapa.innerHTML = 'Visitado <i class="bi bi-check-lg"></i>';
+            btnNoMapa.innerHTML = `<span data-i18n="poi_visited">${dicionario[lang].poi_visited || "Visitado"}</span> <i class="bi bi-check-lg"></i>`;
         } else {
             btnNoMapa.classList.remove('visited');
-            btnNoMapa.innerHTML = 'Marcar como visitado';
+            btnNoMapa.innerHTML = `<span data-i18n="poi_mark_visited">${dicionario[lang].poi_mark_visited || "Marcar como visitado"}</span>`;
         }
     }
 };
