@@ -379,7 +379,15 @@ body.recompensa-ativa .top-header {
 }
 
 /* --- PÁGINA COLEÇÃO --- */
-.rota-controls { padding: 15px; border-radius: 15px; display: grid; gap: 10px; margin-bottom: 20px; }
+.rota-controls { 
+  position: relative; 
+  z-index: 5; /* FIX: Força o bloco a nascer na camada da frente, impedindo o gradiente de vazar por cima */
+  padding: 15px; 
+  border-radius: 15px; 
+  display: grid; 
+  gap: 10px; 
+  margin-bottom: 20px; 
+}
 .tabs-container { display: flex; background: rgba(0,0,0,0.3); border-radius: 20px; padding: 3px; border: 1px solid var(--glass-border); }
 .tab-btn { flex: 1; background: transparent; border: none; padding: 8px 4px; border-radius: 17px; color: var(--warm-cream); font-size: 0.65rem; font-weight: 600; cursor: pointer; transition: background 0.3s; white-space: nowrap; }
 .tab-btn.active { background: var(--honey-yellow); color: var(--soft-black); }
@@ -1666,13 +1674,33 @@ body.recompensa-ativa .trail-nav-group #btn-prev-point {
 /* =========================================================
    ESTÉTICA: BRILHO INCANDESCENTE AMATISTA/ÂMBAR AO FUNDO
 ========================================================= */
+/* 1. Mantem a página com a cor sólida nativa para evitar bugs no vidro */
 #section-desafio,
 #section-colecao {
-    /* Brilho concentrado no centro/topo, liberando o verde puro para o resto da tela */
+    background: var(--forest-green) !important;
+}
+
+/* 2. Cria uma "tela falsa" atrás de tudo só para segurar a luz */
+#section-desafio::before,
+#section-colecao::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; 
+    width: 100%; height: 100%;
+    /* O gradiente agora desvanece para transparente, fundindo com o verde da página */
     background: radial-gradient(
         circle at 50% 45%, 
         rgba(255, 209, 92, 0.22) 0%, 
         rgba(245, 166, 35, 0.06) 35%, 
-        var(--forest-green) 45%
+        transparent 45%
     ) !important;
+    z-index: 0; /* Prega a luz no fundo absoluto */
+    pointer-events: none;
+}
+
+/* 3. Força todo o conteúdo da página para uma dimensão 3D à frente da luz */
+.desafio-page-content,
+.colecao-page-content {
+    position: relative;
+    z-index: 2; 
 }
