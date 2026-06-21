@@ -2698,9 +2698,27 @@ if (botaoInstalar) {
     });
 }
 
+// --- MOTOR DE INSTALAÇÃO E ATUALIZAÇÃO DO PWA MALHADO ---
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js').catch(err => console.log('Falha no SW:', err));
+        navigator.serviceWorker.register('sw.js')
+            .then(reg => {
+                // Escuta se uma nova versão do sw.js foi encontrada no GitHub
+                reg.addEventListener('updatefound', () => {
+                    const newWorker = reg.installing;
+                    newWorker.addEventListener('statechange', () => {
+                        // Quando a nova versão terminar de instalar e o app já estiver sob controle anterior
+                        if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                            // Dispara um aviso ou recarrega a página na hora para aplicar o novo código
+                            mostrarToastAviso("Nova atualização aplicada com sucesso!");
+                            setTimeout(() => {
+                                window.location.reload();
+                            }, 1500);
+                        }
+                    });
+                });
+            })
+            .catch(err => console.log('Falha no SW:', err));
     });
 }
 
