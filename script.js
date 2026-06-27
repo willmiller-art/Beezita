@@ -326,12 +326,20 @@ modeButtons.forEach(btn => {
     });
 });
 
-// Ao carregar a página, se o botão Sistema for o padrão por algum motivo, já verifica
+// Ao carregar a página, identifica o botão ativo e aplica o tema correspondente
 document.addEventListener("DOMContentLoaded", () => {
-   const btnSistemaAtivo = document.querySelector('.mode-control .segment-btn[data-mode="system"]')?.classList.contains('active');
-   if (btnSistemaAtivo) {
-       aplicarTemaMapa(mediaQueryCor.matches ? 'light' : 'dark');
-   }
+    const btnAtivo = document.querySelector('.mode-control .segment-btn.active');
+    if (!btnAtivo) return;
+
+    const modo = btnAtivo.getAttribute('data-mode');
+
+    if (modo === 'system') {
+        aplicarTemaMapa(mediaQueryCor.matches ? 'light' : 'dark');
+    } else if (modo === 'light') {
+        aplicarTemaMapa('light');
+    } else {
+        aplicarTemaMapa('dark');
+    }
 });
 
 const switchBold = document.getElementById('switch-bold');
@@ -1057,51 +1065,51 @@ const recompensasDados = {
     "Casa de abelha 1": {
         titulo: `Mirim <span class="scientific-name">(Plebeia droryana)</span>`,
         descricao: `Pequena no tamanho, gigante na importância. A Mirim é uma abelha nativa sem ferrão que ajuda a polinizar muitas das plantas do museu. Sua entrada costuma ter um detalhe curioso: às vezes aparecem dois furinhos, um maior e outro menor, funcionando como a porta de uma cidade em miniatura.`,
-        curiosidade: `<strong>Curiosidade:</strong> o cheiro da entrada ajuda as abelhas a encontrarem sua casa.`
+        curiosidade: `<strong>Curiosidade:</strong> O cheiro da entrada ajuda as abelhas a encontrarem sua casa. As abelhas dessa trilha são conhecidas como sem ferrão.`
     },
     "Casa de abelha 2": {
         badge: `Cheiro de perigo no ar...`,
         titulo: `<span style="color: #ff6b6b; font-weight: 800;">Ataque</span> <span style="color: var(--warm-cream); font-weight: 500;">de</span> Abelha-limão <br><span class="scientific-name">(Lestrimelitta limao)</span>`,
         descricao: `Nem toda abelha vive em paz com as vizinhas. A Abelha-limão pode invadir colônias de outras espécies para roubar recursos e ocupar ninhos. Faz parte das relações naturais entre os seres vivos e mostra como os ecossistemas possuem seus próprios mecanismos de equilíbrio.`,
-        curiosidade: `<strong>Curiosidade:</strong> algumas espécies desenvolveram estratégias especiais para sobreviver a esses ataques.`
+        curiosidade: `<strong>Curiosidade:</strong> Algumas espécies desenvolveram estratégias especiais para sobreviver a esses ataques.`
     },
     "Casa de abelha 3": {
         titulo: `Iraí <span class="scientific-name">(Nannotrigona testaceicornis)</span>`,
         descricao: `Pequena, mas estratégica. Quando sofre ataques da abelha-limão, a Iraí costuma evitar o confronto direto. Em vez de lutar, muitas operárias se refugiam no interior da colônia e aguardam o perigo passar.`,
-        curiosidade: `<strong>Curiosidade:</strong> sobreviver nem sempre depende da força. Às vezes, depende da estratégia.`
+        curiosidade: `<strong>Curiosidade:</strong> Sobreviver nem sempre depende da força. Às vezes, depende da estratégia.`
     },
     "Casa de abelha 4": {
         titulo: `Mandaçaia <span class="scientific-name">(Melipona quadrifasciata)</span>`,
         descricao: `A Mandaçaia é uma das abelhas sem ferrão mais conhecidas do Brasil. Ela coleta néctar e pólen das flores e mantém reservas de alimento para períodos com pouca floração.`,
-        curiosidade: `<strong>Curiosidade:</strong> sua entrada costuma ser construída com geoprópolis, uma mistura de resinas, cera e partículas de solo.`
+        curiosidade: `<strong>Curiosidade:</strong> Sua entrada costuma ser construída com geoprópolis, uma mistura de resinas, cera e partículas de solo. O mel das abelhas sem ferrão é guardado em pequenos potes dentro do ninho, e não em favos como as abelhas Apis.`
     },
     "Casa de abelha 5": {
         titulo: `Guaraipo <span class="scientific-name">(Melipona bicolor)</span>`,
         descricao: `Mais tranquila e fácil de observar, a Guaraipo costuma manter guardiãs na entrada do ninho para controlar quem entra e quem sai da colônia.`,
-        curiosidade: `<strong>Curiosidade:</strong> em algumas situações, essa espécie pode conviver com mais de uma rainha no mesmo ninho.`
+        curiosidade: `<strong>Curiosidade:</strong> Em algumas situações, essa espécie pode conviver com mais de uma rainha no mesmo ninho.`
     },
     "Casa de abelha 6": {
         badge: `Ei, nós já nos vimos antes?`,
         titulo: `Guaraipo <span class="scientific-name">(Melipona bicolor)</span>`,
         descricao: `Esta colônia é uma grande aliada do nosso Jardim Botânico. A Guaraipo é uma polinizadora essencial, garantindo a reprodução de diversas espécies de plantas que você encontra aqui ao redor.`,
-        curiosidade: `<strong>Curiosidade:</strong> o nome "bicolor" vem das duas faixas claras que ela possui no abdômen, um detalhe que ajuda a identificá-la.`
+        curiosidade: `<strong>Curiosidade:</strong> O nome "bicolor" vem das duas faixas claras que ela possui no abdômen, um detalhe que ajuda a identificá-la.`
     },
     "Hotel para abelhas solitárias": {
         titulo: `Hotel para Abelhas Solitárias`,
         descricao: `Nem todas as abelhas vivem em colônias. Muitas espécies trabalham sozinhas durante toda a vida. Este hotel oferece abrigo para que elas possam descansar, nidificar e criar seus filhotes.`,
-        curiosidade: `<strong>Curiosidade:</strong> algumas abelhas constroem seus ninhos escavando madeira, solo ou aproveitando pequenos buracos já existentes.`
+        curiosidade: `<strong>Curiosidade:</strong> Algumas abelhas constroem seus ninhos escavando madeira, solo ou aproveitando pequenos buracos já existentes. As abelhas em geral ajudam a polinizar plantas do Museu, garantindo a reprodução de muitas espécies vegetais.`
     },
     "Casa de abelha 7": {
         badge: `Descoberta especial!`,
         titulo: `<span class="nome-especial-orquidea">Abelha das Orquídeas</span> <br><span class="scientific-name">(Euglossini)</span>`, 
         descricao: `Coloridas e brilhantes, essas abelhas visitam flores em busca de aromas especiais. Os machos coletam fragrâncias para produzir um perfume próprio.`,
-        curiosidade: `<strong>Curiosidade:</strong> esse perfume funciona como um sinal para atrair possíveis parceiras.`
+        curiosidade: `<strong>Curiosidade:</strong> O perfume funciona como um sinal para atrair possíveis parceiras.`
     },
     "Meliponário": {
         badge: `Um bairro de abelhas`,
         titulo: `Meliponário`,
         descricao: `Você chegou ao meliponário! Aqui vivem diferentes espécies de abelhas sem ferrão que ajudam a conservar a biodiversidade e a restaurar áreas naturais por meio da polinização. Cada uma com suas regras, tarefas e formas de constituir suas colônias.`,
-        curiosidade: `<strong>Curiosidade:</strong> o mel dessas abelhas não é armazenado em favos, mas em pequenos potes construídos dentro do ninho.`
+        curiosidade: `<strong>Curiosidade:</strong> O mel dessas abelhas não é armazenado em favos, mas em pequenos potes construídos dentro do ninho.`
     }
 };
 // Adicionar as outras "Casa de abelha X", "Hotel", etc, aqui depois seguindo o mesmo padrão!
