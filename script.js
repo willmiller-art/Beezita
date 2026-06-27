@@ -1065,7 +1065,7 @@ const recompensasDados = {
     "Casa de abelha 1": {
         titulo: `Mirim <span class="scientific-name">(Plebeia droryana)</span>`,
         descricao: `Pequena no tamanho, gigante na importância. A Mirim é uma abelha nativa sem ferrão que ajuda a polinizar muitas das plantas do museu. Sua entrada costuma ter um detalhe curioso: às vezes aparecem dois furinhos, um maior e outro menor, funcionando como a porta de uma cidade em miniatura.`,
-        curiosidade: `<strong>Curiosidade:</strong> O cheiro da entrada ajuda as abelhas a encontrarem sua casa. As abelhas dessa trilha são conhecidas como sem ferrão.`
+        curiosidade: `<strong>Curiosidade:</strong> O cheiro da entrada ajuda as abelhas a encontrarem sua casa. As abelhas dessa trilha são conhecidas como <strong style='color: #95d89a;'>sem ferrão</strong>.`
     },
     "Casa de abelha 2": {
         badge: `Cheiro de perigo no ar...`,
