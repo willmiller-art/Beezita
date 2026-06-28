@@ -1,6 +1,6 @@
 // --- SERVICE WORKER DO BEEZITA (COM SUPORTE A MAPA OFFLINE) ---
 
-const CACHE_NAME = 'beezita-cache-v2';
+const CACHE_NAME = 'beezita-cache-v3'; // Mudamos para v3 para forçar a atualização no celular
 const MAP_CACHE_NAME = 'beezita-map-tiles-v1';
 
 const urlsToCache = [
@@ -12,6 +12,7 @@ const urlsToCache = [
     './manifest.json',
     './icon-192.png',
     './icon-512.png',
+    './beezita-icon.svg',
     'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css',
     'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js',
     'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css'
