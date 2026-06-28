@@ -586,7 +586,7 @@ const dicionario = {
         trail_started: "TRAIL START", 
         go_to_gate: "GO TO GATE 1 OF MHNJB", 
         nav_trail: "Trail", 
-        nav_discover: "Discover", 
+        nav_discover: "Challenge", 
         nav_collection: "Collection", 
         nav_mhnjb: "MHNJB", 
         nav_faq: "FAQ", 
@@ -721,7 +721,7 @@ const dicionario = {
         trail_started: "INICIO DEL SENDERO", 
         go_to_gate: "VE A LA ENTRADA 1 DEL MHNJB", 
         nav_trail: "Ruta", 
-        nav_discover: "Descubrir", 
+        nav_discover: "Desafío", 
         nav_collection: "Colección", 
         nav_mhnjb: "MHNJB", 
         nav_faq: "FAQ", 
@@ -1199,11 +1199,15 @@ function criarIconeGeografico(nome, status) {
                 nomeLower.includes("sapucaia") ||
                 nomeLower.includes("clareira da caratinga") ||
                 nomeLower.includes("sumaúma") || 
+                nomeLower.includes("mogno") || 
+                nomeLower.includes("barrigudas") || 
+                nomeLower.includes("pau-brasil") || 
                 nomeLower.includes("viveiro")
             ) {
                 iconeBootstrap = 'bi-tree-fill'; corFundo = '#9C5838'; catClass = 'cat-arvore';
             } else if (
                 nomeLower.includes("mirante da lagoa") || 
+                nomeLower.includes("praça da canoa") || 
                 nomeLower.includes("jogos educativos") ||
                 nomeLower.includes("parquinho") || 
                 nomeLower.includes("largo da barriguda") ||
