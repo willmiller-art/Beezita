@@ -104,9 +104,6 @@ const dadosTrilhaMHNJB = {
       }
     },
 
-    /// ==========================================================
-    // --- NOVAS ADIÇÕES DE POIs (SECUNDÁRIOS) ---
-    // ==========================================================
     {
       "type": "Feature",
       "properties": {
@@ -131,6 +128,24 @@ const dadosTrilhaMHNJB = {
         ]
       }
     },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rua da paleontologia e casas de pesquisa"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-43.9137096,-19.8950858],[-43.9139555,-19.8950544],[-43.9143362,-19.8950126],[-43.9145291,-19.8949933],[-43.9147011,-19.8949771]
+        ]
+      }
+    },
+
+    /// ==========================================================
+    // --- POIs (SECUNDÁRIOS) ---
+    // ==========================================================
+
     { "type": "Feature", "properties": { "name": "Anfiteatro da Arqueologia", "cmt": "Anfiteatro da Arqueologia" }, "geometry": { "type": "Point", "coordinates": [-43.914954,-19.894959] } },
     { "type": "Feature", "properties": { "name": "Palacinho - Cartografia Histórica", "cmt": "Palacinho - Cartografia Histórica" }, "geometry": { "type": "Point", "coordinates": [-43.916726,-19.894598] } },
     { "type": "Feature", "properties": { "name": "Arqueologia", "cmt": "Arqueologia" }, "geometry": { "type": "Point", "coordinates": [-43.914435,-19.894666] } },
@@ -145,7 +160,7 @@ const dadosTrilhaMHNJB = {
     { "type": "Feature", "properties": { "name": "Bebedouro", "cmt": "Bebedouro" }, "geometry": { "type": "Point", "coordinates": [-43.9139638,-19.8955311] } },
     { "type": "Feature", "properties": { "name": "Sanitários", "cmt": "Sanitários" }, "geometry": { "type": "Point", "coordinates": [-43.9140084,-19.8955247] } },
     { "type": "Feature", "properties": { "name": "Bebedouro", "cmt": "Bebedouro" }, "geometry": { "type": "Point", "coordinates": [-43.91482,-19.894604] } },
-    { "type": "Feature", "properties": { "name": "Bebedouro", "cmt": "Bebedouro" }, "geometry": { "type": "Point", "coordinates": [-43.913694,-19.895009] } },
+    { "type": "Feature", "properties": { "name": "Bebedouro", "cmt": "Bebedouro" }, "geometry": { "type": "Point", "coordinates": [-43.9137428,-19.8950627] } },
     { "type": "Feature", "properties": { "name": "Bebedouro", "cmt": "Bebedouro" }, "geometry": { "type": "Point", "coordinates": [-43.91369,-19.894557] } },
     { "type": "Feature", "properties": { "name": "Bebedouro", "cmt": "Bebedouro" }, "geometry": { "type": "Point", "coordinates": [-43.913522,-19.890913] } },
     { "type": "Feature", "properties": { "name": "Sanitários", "cmt": "Sanitários" }, "geometry": { "type": "Point", "coordinates": [-43.913628,-19.890911] } },
@@ -158,6 +173,13 @@ const dadosTrilhaMHNJB = {
     { "type": "Feature", "properties": { "name": "Dinossauro (Triceratops)", "cmt": "Dinossauro (Triceratops)" }, "geometry": { "type": "Point", "coordinates": [-43.9131901,-19.8921224] } },
     { "type": "Feature", "properties": { "name": "Centro de Visitantes", "cmt": "Centro de Visitantes" }, "geometry": { "type": "Point", "coordinates": [-43.9132004,-19.8922748] } },
     { "type": "Feature", "properties": { "name": "Biblioteca e Auditório Pau-Brasil", "cmt": "Biblioteca e Auditório Pau-Brasil" }, "geometry": { "type": "Point", "coordinates": [-43.9140094,-19.8955749] } },
-    { "type": "Feature", "properties": { "name": "Largo da Barriguda", "cmt": "Largo da Barriguda" }, "geometry": { "type": "Point", "coordinates": [-43.9136422, -19.8955202] } }
+    { "type": "Feature", "properties": { "name": "Largo da Barriguda", "cmt": "Largo da Barriguda" }, "geometry": { "type": "Point", "coordinates": [-43.9136422,-19.8955202] } },
+    { "type": "Feature", "properties": { "name": "Praça da Canoa", "cmt": "Praça da Canoa" }, "geometry": { "type": "Point", "coordinates": [-43.9135878,-19.8942983] } },
+    { "type": "Feature", "properties": { "name": "Mogno", "cmt": "Mogno" }, "geometry": { "type": "Point", "coordinates": [-43.9137078,-19.8955945] } },
+    { "type": "Feature", "properties": { "name": "Barrigudas", "cmt": "Barrigudas" }, "geometry": { "type": "Point", "coordinates": [-43.9136278,-19.8954224] } },
+    { "type": "Feature", "properties": { "name": "Barrigudas", "cmt": "Barrigudas" }, "geometry": { "type": "Point", "coordinates": [-43.9147417,-19.8949283] } },
+    { "type": "Feature", "properties": { "name": "Sapucaia", "cmt": "Sapucaia" }, "geometry": { "type": "Point", "coordinates": [-43.9134145,-19.8942965] } },
+    { "type": "Feature", "properties": { "name": "Pau-Brasil", "cmt": "Pau-Brasil" }, "geometry": { "type": "Point", "coordinates": [-43.9139468,-19.8947981] } },
+    { "type": "Feature", "properties": { "name": "Pau-Brasil", "cmt": "Pau-Brasil" }, "geometry": { "type": "Point", "coordinates": [-43.9141662,-19.8953657] } }
   ]
 };
