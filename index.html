@@ -131,7 +131,6 @@
                   <h2 class="progress-title"><strong id="contador-estacoes">0</strong> / 8 estações visitadas</h2>
                   <div class="progress-bar-container">
                     <div class="progress-bar" style="width: 0%;"></div>
-                    <i class="bi bi-bug-fill bee-tracker" style="left: 0%;"></i>
                   </div>
                 </div>
               </div>
@@ -381,10 +380,10 @@
         <div style="width: 45px;"></div>
       </div>
       <div class="settings-content-scroll">
-         <div class="faq-item"><h4 data-i18n="faq_q1">Como funcionam as estações?</h4><p data-i18n="faq_a1">A trilha é autoguiada. Ao passar por cada estação, marque manuamente no mapa a sua visita.</p></div>
+         <div class="faq-item"><h4 data-i18n="faq_q1">Como funcionam as estações?</h4><p data-i18n="faq_a1">A trilha é autoguiada. Ao passar por cada estação, marque manualmente no mapa a sua visita clicando em "Estou aqui" e siga as instruções na tela. A cada estação, uma nova descoberta.</p></div>
          <div class="faq-item"><h4 data-i18n="faq_q2">O app funciona sem internet?</h4><p data-i18n="faq_a2">Sim! Nas configurações do aplicativo é possível baixar o mapa para uso offline. A localização em tempo real fica menos precisa e o tempo local fica indisponível.</p></div>
-         <div class="faq-item"><h4 data-i18n="faq_q3">Quanto custa o ingresso?</h4><p data-i18n="faq_a3">Visita espontânea: gratuito. Visita agendada em grupo: R$ 12,00. Descontos para instituições públicas. Isentos: estudantes/professores UFMG e acima de 60 anos.</p></div>
-         <div class="faq-item"><h4 data-i18n="faq_q4">As abelhas da trilha podem picar? É seguro?</h4><p data-i18n="faq_a4">É totalmente seguro! O app foca nas espécies nativas brasileiras 'sem ferrão'. Elas são inofensivas e não picam. Apenas pedimos para não tocar nas caixas.</p></div>
+         <div class="faq-item"><h4 data-i18n="faq_q3">Quanto custa o ingresso?</h4><p data-i18n="faq_a3">Visita espontânea: gratuito. Visita agendada em grupo: R$ 12,00 por visitante. Descontos para instituições públicas. Isentos: estudantes/professores UFMG e acima de 60 anos.</p></div>
+         <div class="faq-item"><h4 data-i18n="faq_q4">As abelhas da trilha podem picar? É seguro?</h4><p data-i18n="faq_a4">É totalmente seguro! A Trilha da Polinização foca nas espécies nativas brasileiras que não possuem ferrão. Elas são inofensivas e não picam. Apenas pedimos para não tocar nas caixas.</p></div>
          <div class="faq-item"><h4 data-i18n="faq_q5">É necessário agendar visita?</h4><p data-i18n="faq_a5">Para grupos com mais de 10 pessoas é indispensável. Para visitas individuais ou espontâneas, não é necessário.</p></div>
          <div class="faq-item"><h4 data-i18n="faq_q6">Por que o agendamento é indispensável?</h4><p data-i18n="faq_a6">Para garantir a segurança, organização e não impactar a capacidade limitada dos espaços fechados.</p></div>
          <div class="faq-item"><h4 data-i18n="faq_q7">Qual o horário de funcionamento?</h4><p data-i18n="faq_a7">Quarta a sábado: 8h30 às 16h (permanência até 17h). Fechado em feriados nacionais e municipais.</p></div>
@@ -421,9 +420,9 @@
         <div class="access-group">
           <label class="access-label" data-i18n="acc_map">APARÊNCIA DO MAPA</label>
           <div class="segmented-control mode-control">
-            <button class="segment-btn active" data-mode="light"><i class="bi bi-sun"></i> Claro</button>
-            <button class="segment-btn" data-mode="default"><i class="bi bi-moon"></i> Escuro</button>
-            <button class="segment-btn" data-mode="system"><i class="bi bi-eye"></i> Sistema</button>
+            <button class="segment-btn active" data-mode="light" data-i18n="acc_map_light"><i class="bi bi-sun"></i> Claro</button>
+            <button class="segment-btn" data-mode="default" data-i18n="acc_map_dark"><i class="bi bi-moon"></i> Escuro</button>
+            <button class="segment-btn" data-mode="system" data-i18n="acc_map_sys"><i class="bi bi-eye"></i> Sistema</button>
           </div>
         </div>
         <div class="access-switches-group">
@@ -560,7 +559,9 @@
       <div class="settings-content-scroll">
          <div class="access-switches-group">
             <a href="#" class="info-item btn-select-lang" data-lang="pt" style="padding: 14px 0;"><span class="text">Português</span></a>
+            <div class="settings-item-divider" style="margin: 0;"></div>
             <a href="#" class="info-item btn-select-lang" data-lang="en" style="padding: 14px 0;"><span class="text">English</span></a>
+            <div class="settings-item-divider" style="margin: 0;"></div>
             <a href="#" class="info-item btn-select-lang" data-lang="es" style="border-bottom: none; padding: 14px 0;"><span class="text">Español</span></a>
          </div>
       </div>
