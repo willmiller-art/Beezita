@@ -484,11 +484,11 @@ const dicionario = {
         desc_apagar: "Você está prestes a apagar o progresso da trilha. Isso não pode ser desfeito.", 
         desc_limpar: "Você está prestes a limpar a coleção desbloqueada. Isso não pode ser desfeito.", 
         faq_q1: "Como funcionam as estações?", 
-        faq_a1: "Cada estação possui um QR code ou identificação. Aproxime-se para registrar a visita.", 
+        faq_a1: "A trilha é autoguiada. Ao passar por cada estação, marque manualmente no mapa a sua visita clicando em \"Estou aqui\" e siga as instruções na tela. A cada estação, uma nova descoberta.", 
         faq_q2: "O app funciona sem internet?", 
         faq_a2: "Sim! Nas configurações do aplicativo é possível baixar o mapa para uso offline. A localização em tempo real fica menos precisa e a temperatura local fica indisponível.",
         faq_q3: "Quanto custa o ingresso?", 
-        faq_a3: "Visita espontânea: gratuito. Visita agendada em grupo: R$ 12,00. Descontos para instituições públicas. Isentos: estudantes/professores UFMG e acima de 60 anos.", 
+        faq_a3: "Visita espontânea: gratuito. Visita agendada em grupo: R$ 12,00 por visitante. Descontos para instituições públicas. Isentos: estudantes/professores UFMG e acima de 60 anos.", 
         faq_q4: "As abelhas da trilha podem picar? É seguro?",
         faq_a4: "É totalmente seguro! O app foca nas espécies nativas brasileiras 'sem ferrão'. Elas são inofensivas e não picam. Apenas pedimos para não tocar nas caixas.",
         faq_q5: "É necessário agendar visita?", 
@@ -619,13 +619,13 @@ const dicionario = {
         desc_apagar: "You are about to delete your trail progress. This cannot be undone.", 
         desc_limpar: "You are about to clear your unlocked collection. This cannot be undone.", 
         faq_q1: "How do the stations work?", 
-        faq_a1: "Each station has a QR code or ID. Approach to register your visit.", 
+        faq_a1: "The trail is self-guided. As you pass each station, manually mark your visit on the map by clicking \"I'm here\" and follow the on-screen instructions. A new discovery awaits at every station.", 
         faq_q2: "Does the app work offline?", 
         faq_a2: "Yes! In the app settings, you can download the map for offline use. Real-time location becomes less accurate, and local temperature will be unavailable.",
         faq_q3: "How much is the ticket?", 
-        faq_a3: "Spontaneous visit: free. Group visit: R$ 12.00. Discounts for public institutions. Exempt: UFMG students/staff and over 60s.", 
+        faq_a3: "Spontaneous visit: free. Group visit: R$ 12.00 per visitor. Discounts for public institutions. Exempt: UFMG students/staff and over 60s.", 
         faq_q4: "Can the bees on the trail sting? Is it safe?",
-        faq_a4: "It is completely safe! The app focuses on Brazilian 'stingless' native species. They are harmless and do not sting. We just ask you not to touch the boxes.",
+        faq_a4: "It is completely safe! The Pollination Trail focuses on Brazilian stingless native species. They are harmless and do not sting. We just ask you not to touch the boxes.",
         faq_q5: "Is booking necessary?", 
         faq_a5: "Mandatory for groups over 10 people. Not required for individuals.", 
         faq_q6: "Why is booking mandatory?", 
@@ -717,8 +717,8 @@ const dicionario = {
     },
     es: {
         slogan: "¡EXPLORA EL MHNJB CON LAS ABEJAS!", 
-        start_trail: "COMENZAR RUTA", 
-        trail_started: "INICIO DE LA RUTA", 
+        start_trail: "COMENZAR SENDERO", 
+        trail_started: "INICIO DEL SENDERO", 
         go_to_gate: "VE A LA ENTRADA 1 DEL MHNJB", 
         nav_trail: "Ruta", 
         nav_discover: "Descubrir", 
@@ -736,7 +736,7 @@ const dicionario = {
         set_pref: "PREFERENCIAS", 
         set_lang: "Idioma", 
         set_data: "GESTIONAR DATOS", 
-        set_reset_trail: "Borrar Progreso de Ruta", 
+        set_reset_trail: "Borrar Progreso del Sendero", 
         set_reset_col: "Limpar Colección Desbloqueada", 
         modal_sure: "¿Estás seguro?", 
         modal_no: "No", 
@@ -750,16 +750,16 @@ const dicionario = {
         gps_allow: "Permitir acceso a ubicación", 
         gps_prec: "Mejorar precisión de ubicación", 
         gps_desc: "La precisión mejorada utiliza conexiones cercanas (como Wi-Fi e Bluetooth) para referenciar geográficamente tu posición exacta en el museo.", 
-        lang_name: "Español", desc_apagar: "Estás a punto de borrar el progreso de la ruta. Esto no se puede deshacer.", 
+        lang_name: "Español", desc_apagar: "Estás a punto de borrar el progreso del sendero. Esto no se puede deshacer.", 
         desc_limpar: "Estás a punto de limpiar la colección desbloqueada. Esto no se puede deshacer.", 
         faq_q1: "¿Cómo funcionan las estaciones?", 
-        faq_a1: "Cada estación tiene un código QR o identificación. Acércate para registrar la visita.", 
+        faq_a1: "El sendero es autoguiado. Al pasar por cada estación, marca manualmente tu visita en el mapa haciendo clic en \"Estoy aquí\" y sigue las instrucciones en la pantalla. En cada estación, un nuevo descubrimiento.", 
         faq_q2: "¿La aplicación funciona sin internet?", 
         faq_a2: "¡Sí! En la configuración de la aplicación es posible descargar el mapa para usarlo sin conexión. La ubicación en tiempo real se vuelve menos precisa y la temperatura local no estará disponible.",
         faq_q3: "¿Cuánto cuesta la entrada?", 
-        faq_a3: "Visita espontánea: gratis. Grupos: R$ 12,00. Descuentos para instituciones públicas. Exentos: estudiantes/personal UFMG y mayores de 60 años.", 
-        faq_q4: "¿Las abejas de la ruta pueden picar? ¿Es seguro?",
-        faq_a5: "¡Es totalmente seguro! La app se centra en especies nativas brasileñas 'sin aguijón'. Son inofensivas y no pican. Solo pedimos no tocar las cajas.",
+        faq_a3: "Visita espontánea: gratis. Grupos: R$ 12,00 por visitante. Descuentos para instituciones públicas. Exentos: estudiantes/personal UFMG y mayores de 60 años.", 
+        faq_q4: "¿Las abejas del sendero pueden picar? ¿Es seguro?",
+        faq_a4: "¡Es totalmente seguro! El Sendero de la Polinización se centra en las especies nativas brasileñas sin aguijón. Son inofensivas y no pican. Solo pedimos no tocar las cajas.",
         faq_q5: "¿Es necesario reservar?", 
         faq_a5: "Obligatorio para grupos de más de 10 personas. No es necesario para individuos.", 
         faq_q6: "¿Por qué es obligatorio reservar?", 
@@ -768,7 +768,7 @@ const dicionario = {
         faq_a7: "Mié a Sáb: 8:30 a 16:00 (permanencia hasta las 17:00). Cerrado los festivos.", 
         faq_q8: "¿Como chegar al MHNJB?", 
         faq_a8: "Dirección: Rua Gustavo da Silveira, 1035 - Santa Inês. Metro: Estación Santa Inês. Autobuses: 4802A, 8001A, 9105, 9205, 9402.", 
-        continue_trail: "CONTINÚE EN LA RUTA", 
+        continue_trail: "CONTINÚE EL SENDERO", 
         click_expand: "CLIC PARA EXPANDIR", 
         menu_sec: "Seguridad y Pautas", 
         made_with: "Hecho con", 
@@ -809,7 +809,7 @@ const dicionario = {
         sec_7: "Busca ayuda si es necesario", 
         toast_far: "Ups, parece que estás lejos. Usa esta opción cuando estés en el MHNJB.", 
         toast_gps_denied: "Permite la ubicación en el navegador para centrar el mapa.", 
-        toast_trail_cleared: "Progreso de la ruta borrado.", 
+        toast_trail_cleared: "Progreso del sendero borrado.", 
         toast_col_cleared: "Colección limpiada con éxito.",
         mhnjb_tag: "MHNJB - ESPACIO DE SABERES", 
         mhnjb_title: "Museu de História Natural e Jardim Botânico da UFMG", 
@@ -841,11 +841,11 @@ const dicionario = {
         game_sub_quiz: "¡Prueba tus conocimientos!",
         game_title_cur: "CURIOSIDADES MHNJB",
         game_sub_cur: "Desliza y descubre",
-        exit_q: "¿Deseas salir de la navegación de la ruta?",
+        exit_q: "¿Deseas salir de la navegación del sendero?",
         exit_cont: "Continuar",
         exit_leave: "Salir",
         trail_congrats: "¡FELICIDADES!",
-        trail_completed: "Completaste la ruta.",
+        trail_completed: "Completaste el sendero.",
         trail_enjoy: "Disfruta de otros espacios del museo MHNJB.",
         trail_exit_btn: "SALIR"
     }
@@ -1268,12 +1268,9 @@ function focarPontoTrilha(evitarMovimentoMapa = false) {
         // Trava de segurança para a barra não passar de 100%
         if (porcentagemBarra > 100) porcentagemBarra = 100;
 
-        // Anima a barra e a abelhinha
+        // Anima apenas a barra de progresso
         const barraProgresso = document.querySelector('#home-progress-panel .progress-bar');
-        const beeTracker = document.querySelector('#home-progress-panel .bee-tracker');
-        
         if (barraProgresso) barraProgresso.style.width = porcentagemBarra + '%';
-        if (beeTracker) beeTracker.style.left = porcentagemBarra + '%';
     }
 
     if(passoTrilhaAtual >= roteiroTrilha.length) {
@@ -1599,7 +1596,6 @@ function iniciarTrilhaDeFato() {
                 <h2 class="progress-title"><strong id="contador-estacoes">0</strong> / 9 estações visitadas</h2>
                 <div class="progress-bar-container">
                     <div class="progress-bar" style="width: 0%;"></div>
-                    <i class="bi bi-bug-fill bee-tracker" style="left: 0%;"></i>
                 </div>
             `;
         }
@@ -2148,7 +2144,6 @@ function resetarTrilha() {
         <h2 class="progress-title"><strong id="contador-estacoes">0</strong> / 9 estações visitadas</h2>
         <div class="progress-bar-container">
             <div class="progress-bar" style="width: 0%;"></div>
-            <i class="bi bi-bug-fill bee-tracker" style="left: 0%;"></i>
         </div>
     `;
     progressInfo.appendChild(originalInfo);
