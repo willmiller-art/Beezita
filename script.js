@@ -448,8 +448,19 @@ const dicionario = {
     pt: {
         slogan: "EXPLORE O MHNJB COM AS ABELHAS!", 
         start_trail: "COMEÇAR TRILHA", 
+        welcome_title: "Bem-vindo(a) ao MHNJB!",
+        available_trail: "Trilha autoguiada disponível:",
+        btn_start_trail: "COMEÇAR",
+        trail_name: "Trilha da Polinização",
+        follow_trail_to: "SIGA A TRILHA ATÉ", // Nova chave
+        stations_visited: "estações visitadas",
+        i_am_here: "ESTOU AQUI",
+        btn_exit: "SAIR",
+        new_discovery: "Nova descoberta!",
         trail_started: "INÍCIO DA TRILHA", 
-        go_to_gate: "VÁ ATÉ A PORTARIA 1 DO MHNJB", 
+        go_to_gate: "VÁ ATÉ A PORTARIA 1", 
+        go_to_gate_expanded: "VÁ ATÉ A PORTARIA 1 DO MHNJB",
+        nav_go_to_meliponary: "VÁ ATÉ O MELIPONÁRIO",
         nav_trail: "Trilha", 
         nav_discover: "Desafio", 
         nav_collection: "Coleção", 
@@ -528,7 +539,16 @@ const dicionario = {
         cat_restroom: "Sanitários", 
         cat_gate: "Portarias", 
         info_help: "AJUDA", 
-        info_how_map: "Como usar o mapa", 
+        info_how_map: "Como usar o App", 
+        tut_intro: "O Beezita é o seu guia digital de bolso. Veja as principais funções:",
+        tut_trail_title: "Trilha da Polinização",
+        tut_trail_desc: "Navegue pelo mapa seguindo a linha tracejada. Ao chegar em um ponto, clique em \"ESTOU AQUI\" para desbloquear cartas e desafios.",
+        tut_map_title: "Exploração Livre",
+        tut_map_desc: "Use o botão de binóculos no mapa para ativar o \"Ver no mapa\". Ele destaca exposições, árvores notáveis e utilidades próximas a você.",
+        tut_col_title: "Diário de Bordo",
+        tut_col_desc: "Cada descoberta na trilha fica salva na aba 'Coleção'. Revise o que aprendeu mesmo quando estiver offline.",
+        tut_muse_title: "O Museu (MHNJB)",
+        tut_muse_desc: "Na aba MHNJB, você encontra detalhes de funcionamento, ingressos e a história do Jardim Botânico.",
         sec_title: "Segurança", 
         sec_group: "SEGURANÇA E ORIENTAÇÃO", 
         sec_1: "Leve repelente", 
@@ -570,6 +590,14 @@ const dicionario = {
         game_cards: "cartas",
         game_title_quiz: "DESAFIO DAS ABELHAS",
         game_sub_quiz: "Teste seus conhecimentos!",
+        game_swipe_hint: "Deslize a carta para o lado e descubra curiosidades",
+        game_restart: "RECOMEÇAR",
+        game_question: "Pergunta",
+        game_curiosity: "Curiosidade",
+        game_congrats: "Parabéns!",
+        game_quiz_done: "Você completou o quiz.",
+        game_score: "Acertos",
+        game_cards_done: "Você completou todas as cartas.",
         game_title_cur: "CURIOSIDADES MHNJB",
         game_sub_cur: "Deslize e descubra",
         exit_q: "Deseja sair da navegação na trilha?",
@@ -583,8 +611,19 @@ const dicionario = {
     en: {
         slogan: "EXPLORE THE MHNJB WITH THE BEES!", 
         start_trail: "START TRAIL", 
+        welcome_title: "Welcome to MHNJB!",
+        available_trail: "Self-guided trail available:",
+        btn_start_trail: "START",
+        trail_name: "Pollination Trail",
+        follow_trail_to: "FOLLOW THE TRAIL TO", // Nova chave
+        stations_visited: "stations visited",
+        i_am_here: "I'M HERE",
+        btn_exit: "EXIT",
+        new_discovery: "New discovery!",
         trail_started: "TRAIL START", 
-        go_to_gate: "GO TO GATE 1 OF MHNJB", 
+        go_to_gate: "GO TO GATE 1", 
+        go_to_gate_expanded: "GO TO GATE 1 OF MHNJB",
+        nav_go_to_meliponary: "GO TO THE MELIPONARY",
         nav_trail: "Trail", 
         nav_discover: "Challenge", 
         nav_collection: "Collection", 
@@ -663,7 +702,16 @@ const dicionario = {
         cat_restroom: "Restrooms", 
         cat_gate: "Gates", 
         info_help: "HELP", 
-        info_how_map: "How to use the map", 
+        info_how_map: "How to use the App",
+        tut_intro: "Beezita is your digital pocket guide. Here are the main features:",
+        tut_trail_title: "Pollination Trail",
+        tut_trail_desc: "Navigate the map following the dashed line. When you reach a point, click \"I'M HERE\" to unlock cards and challenges.",
+        tut_map_title: "Free Exploration",
+        tut_map_desc: "Use the binoculars button on the map to activate the \"View on map\". It highlights exhibitions, notable trees, and nearby utilities.",
+        tut_col_title: "Logbook",
+        tut_col_desc: "Every discovery on the trail is saved in the 'Collection' tab. Review what you learned even when offline.",
+        tut_muse_title: "The Museum (MHNJB)",
+        tut_muse_desc: "In the MHNJB tab, you will find operating hours, tickets, and the history of the Botanical Garden.",
         sec_title: "Safety", 
         sec_group: "SAFETY AND GUIDELINES", 
         sec_1: "Bring insect repellent", 
@@ -705,6 +753,14 @@ const dicionario = {
         game_cards: "cards",
         game_title_quiz: "BEE QUIZ",
         game_sub_quiz: "Test your knowledge!",
+        game_swipe_hint: "Swipe the card sideways to discover curiosities",
+        game_restart: "RESTART",
+        game_question: "Question",
+        game_curiosity: "Curiosity",
+        game_congrats: "Congratulations!",
+        game_quiz_done: "You have completed the quiz.",
+        game_score: "Score",
+        game_cards_done: "You have completed all cards.",
         game_title_cur: "MHNJB CURIOSITIES",
         game_sub_cur: "Swipe and discover",
         exit_q: "Do you want to exit trail navigation?",
@@ -718,8 +774,19 @@ const dicionario = {
     es: {
         slogan: "¡EXPLORA EL MHNJB CON LAS ABEJAS!", 
         start_trail: "COMENZAR SENDERO", 
+        welcome_title: "¡Bienvenido/a al MHNJB!",
+        available_trail: "Sendero autoguiado disponible:",
+        btn_start_trail: "COMENZAR",
+        trail_name: "Sendero de la Polinización",
+        follow_trail_to: "SIGUE EL SENDERO HASTA", // Nova chave
+        stations_visited: "estaciones visitadas",
+        i_am_here: "ESTOY AQUÍ",
+        btn_exit: "SALIR",
+        new_discovery: "¡Nuevo descubrimiento!",
         trail_started: "INICIO DEL SENDERO", 
-        go_to_gate: "VE A LA ENTRADA 1 DEL MHNJB", 
+        go_to_gate: "VE A LA ENTRADA 1", 
+        go_to_gate_expanded: "VE A LA ENTRADA 1 DEL MHNJB",
+        nav_go_to_meliponary: "VE AL MELIPONARIO",
         nav_trail: "Ruta", 
         nav_discover: "Desafío", 
         nav_collection: "Colección", 
@@ -797,7 +864,16 @@ const dicionario = {
         cat_restroom: "Baños", 
         cat_gate: "Portones", 
         info_help: "AYUDA", 
-        info_how_map: "Cómo usar el mapa", 
+        info_how_map: "Cómo usar la App",
+        tut_intro: "Beezita es tu guía digital de bolsillo. Mira las funciones principales:",
+        tut_trail_title: "Sendero de la Polinización",
+        tut_trail_desc: "Navega por el mapa siguiendo la línea discontinua. Al llegar a un punto, haz clic en \"ESTOY AQUÍ\" para desbloquear cartas y desafíos.",
+        tut_map_title: "Exploración Libre",
+        tut_map_desc: "Usa el botón de prismáticos en el mapa para activar el \"Ver en el mapa\". Destaca exposiciones, árboles notables y utilidades cercanas.",
+        tut_col_title: "Diario de a Bordo",
+        tut_col_desc: "Cada descubrimiento en el sendero se guarda en la pestaña 'Colección'. Revisa lo que aprendiste incluso sin conexión.",
+        tut_muse_title: "El Museo (MHNJB)",
+        tut_muse_desc: "En la pestaña MHNJB, encontrarás horarios, entradas y la historia del Jardín Botánico.",
         sec_title: "Seguridad", 
         sec_group: "SEGURIDAD Y PAUTAS", 
         sec_1: "Lleva repelente de insectos", 
@@ -839,6 +915,14 @@ const dicionario = {
         game_cards: "cartas",
         game_title_quiz: "DESAFÍO DE ABEJAS",
         game_sub_quiz: "¡Prueba tus conocimientos!",
+        game_swipe_hint: "Desliza la carta hacia un lado y descubre curiosidades",
+        game_restart: "REINICIAR",
+        game_question: "Pregunta",
+        game_curiosity: "Curiosidad",
+        game_congrats: "¡Felicidades!",
+        game_quiz_done: "Has completado el quiz.",
+        game_score: "Aciertos",
+        game_cards_done: "Has completado todas las cartas.",
         game_title_cur: "CURIOSIDADES MHNJB",
         game_sub_cur: "Desliza y descubre",
         exit_q: "¿Deseas salir de la navegación del sendero?",
@@ -870,6 +954,10 @@ function aplicarIdioma(idioma) {
 
     const labelIdiomaAtual = document.getElementById('label-idioma-atual');
     if (labelIdiomaAtual) labelIdiomaAtual.innerText = textos.lang_name;
+
+    if (typeof renderizarCartas === 'function') {
+        renderizarCartas();
+    }
 }
 
 document.querySelectorAll('.btn-select-lang').forEach(btn => {
@@ -882,7 +970,7 @@ document.querySelectorAll('.btn-select-lang').forEach(btn => {
 });
 
 const idiomaSalvo = localStorage.getItem('beezita_lang') || 'pt';
-aplicarIdioma(idiomaSalvo);
+setTimeout(() => aplicarIdioma(idiomaSalvo), 100);
 
 // --- LÓGICA DO PAINEL DE CONFIGURAÇÕES, SUB-PÁGINAS E POP-UP MODAL ---
 const configBtnMenu = document.querySelector('.config-btn');
@@ -1326,27 +1414,48 @@ function focarPontoTrilha(evitarMovimentoMapa = false) {
     const lang = localStorage.getItem('beezita_lang') || 'pt';
 
     if (passoTrilhaAtual === 0) {
-        if(subtitulo) subtitulo.innerText = "INÍCIO DA TRILHA";
-        if(acaoText) acaoText.innerText = "VÁ ATÉ A PORTARIA 1 DO MHNJB";
+        if(subtitulo) {
+             subtitulo.setAttribute('data-i18n', 'trail_started');
+             subtitulo.innerText = dicionario[lang].trail_started;
+        }
+        if(acaoText) {
+             acaoText.setAttribute('data-i18n', 'go_to_gate_expanded'); // Direcionado para o expandido
+             acaoText.innerText = dicionario[lang].go_to_gate_expanded; 
+        }
         
-        // Mantém a pílula com a instrução inicial
+        // Mantém a pílula contraída com a instrução curta
         if (isTrailStarted && pillMain) {
             pillMain.removeAttribute('data-i18n');
-            pillMain.innerText = "VÁ ATÉ A PORTARIA 1";
+            pillMain.innerText = dicionario[lang].go_to_gate.toUpperCase(); // Exibe "VÁ ATÉ A PORTARIA 1"
         }
     } else {
-        if(subtitulo) subtitulo.innerText = "SIGA A TRILHA ATÉ";
+        if(subtitulo) {
+            subtitulo.setAttribute('data-i18n', 'follow_trail_to');
+            subtitulo.innerText = dicionario[lang].follow_trail_to;
+        }
         
-        // Esta linha abaixo resolve o problema de exibição para o usuário
         let nomeExibicao = (nomeAlvo.includes("Sapucaia")) ? "Sapucaia" : nomeAlvo;
-        if(acaoText) acaoText.innerText = nomeExibicao.toUpperCase();
+        
+        if (nomeExibicao.startsWith("Casa de abelha")) {
+            const num = nomeExibicao.replace(/\D/g, '');
+            if(acaoText) acaoText.innerHTML = `<span data-i18n="poi_bee_house">${dicionario[lang].poi_bee_house}</span> ${num}`;
+        } else if (nomeExibicao === "Hotel para abelhas solitárias") {
+            if(acaoText) acaoText.innerHTML = `<span data-i18n="poi_bee_hotel">${dicionario[lang].poi_bee_hotel}</span>`;
+        } else if (nomeExibicao === "Meliponário") {
+            if(acaoText) acaoText.innerHTML = `<span data-i18n="poi_meliponary">${dicionario[lang].poi_meliponary}</span>`;
+        } else {
+            if(acaoText) {
+                 acaoText.removeAttribute('data-i18n');
+                 acaoText.innerText = nomeExibicao.toUpperCase();
+            }
+        }
 
-        // Controle inteligente da pílula para os demais passos
+        // Controle inteligente da pílula para os demais passos TRADUZIDO
         if (isTrailStarted && pillMain) {
             if (passoTrilhaAtual === roteiroTrilha.length - 1) {
-                // Último passo: Meliponário
-                pillMain.removeAttribute('data-i18n');
-                pillMain.innerText = "VÁ ATÉ O MELIPONÁRIO";
+                // Último passo: Meliponário - Fixo, curto e sem estourar o layout
+                pillMain.setAttribute('data-i18n', 'nav_go_to_meliponary');
+                pillMain.innerText = dicionario[lang].nav_go_to_meliponary || "VÁ ATÉ O MELIPONÁRIO";
             } else {
                 // Passos intermediários
                 pillMain.setAttribute('data-i18n', 'continue_trail');
@@ -1354,7 +1463,6 @@ function focarPontoTrilha(evitarMovimentoMapa = false) {
             }
         }
     }
-
     if (isTrailStarted) {
         const bPrev = document.getElementById('btn-prev-point');
         const bNext = document.getElementById('btn-next-point');
@@ -1363,12 +1471,11 @@ function focarPontoTrilha(evitarMovimentoMapa = false) {
         if (bNext) {
             if (passoTrilhaAtual >= roteiroTrilha.length - 1) {
             bNext.classList.add('is-final');
-            // TRAVA: Garantimos que ele inicie travado (cinza)
             bNext.classList.add('nav-disabled'); 
             bNext.innerHTML = '<i class="bi bi-check-lg"></i>';
         } else {
             bNext.classList.remove('is-final');
-            bNext.classList.remove('nav-disabled'); // Libera para os passos anteriores
+            bNext.classList.remove('nav-disabled'); 
             bNext.innerHTML = '<i class="bi bi-chevron-right"></i>';
         }
         }
@@ -1485,18 +1592,21 @@ if (homeProgressPanel) {
                 if (bNext) bNext.style.display = 'none';
                 if (bExit) bExit.style.display = 'none'; 
                 
+                // MÁGICA AQUI: Declaramos o idioma ANTES de construir o HTML
+                const lang = localStorage.getItem('beezita_lang') || 'pt';
+                
                 if (progressInfo) {
                     progressInfo.style.setProperty('padding-right', '0px', 'important');
                     progressInfo.style.setProperty('margin-top', '0px', 'important');
                     
                     progressInfo.innerHTML = `
                         <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; width: 100%; height: 100%; min-height: 85px;">
-                            <h2 style="color: var(--honey-yellow); font-size: 1.05rem; margin-bottom: 2px; font-weight: 700;">Bem-vindo(a) ao MHNJB!</h2>
-                            <p style="color: var(--warm-cream); font-size: 0.75rem; margin-bottom: 8px; opacity: 0.8;">Trilha autoguiada disponível:</p>
+                            <h2 style="color: var(--honey-yellow); font-size: 1.05rem; margin-bottom: 2px; font-weight: 700;" data-i18n="welcome_title">${dicionario[lang].welcome_title}</h2>
+                            <p style="color: var(--warm-cream); font-size: 0.75rem; margin-bottom: 8px; opacity: 0.8;" data-i18n="available_trail">${dicionario[lang].available_trail}</p>
                             <div style="display: flex; align-items: center; justify-content: center; gap: 8px; padding: 4px 10px; background: rgba(0,0,0,0.3); border-radius: 20px; border: 1px solid var(--glass-border);">
                                 <i class="bi bi-signpost-2" style="color: var(--honey-yellow); font-size: 0.8rem;"></i>
-                                <span style="color: var(--warm-cream); font-size: 0.75rem; font-weight: 600;">Trilha da Polinização</span>
-                                <button id="btn-start-actual-trail" style="background: var(--honey-yellow); color: var(--soft-black); border: none; padding: 4px 12px; border-radius: 12px; font-size: 0.65rem; font-weight: 800; cursor: pointer; text-transform: uppercase; margin-left: 5px;">COMEÇAR</button>
+                                <span style="color: var(--warm-cream); font-size: 0.75rem; font-weight: 600;" data-i18n="trail_name">${dicionario[lang].trail_name}</span>
+                                <button id="btn-start-actual-trail" data-i18n="btn_start_trail" style="background: var(--honey-yellow); color: var(--soft-black); border: none; padding: 4px 12px; border-radius: 12px; font-size: 0.65rem; font-weight: 800; cursor: pointer; text-transform: uppercase; margin-left: 5px;">${dicionario[lang].btn_start_trail}</button>
                             </div>
                         </div>
                     `;
@@ -1506,7 +1616,7 @@ if (homeProgressPanel) {
                         if (btnStartActual) {
                             btnStartActual.addEventListener('click', (ev) => {
                                 ev.stopPropagation();
-                                iniciarTrilhaDeFato(); // Agora, só chama aqui!
+                                iniciarTrilhaDeFato(); 
                             });
                         }
                     }, 50);
@@ -1522,7 +1632,7 @@ if (homeProgressPanel) {
                 
                 if (bPrev) { bPrev.style.display = ''; bPrev.classList.add('visible'); }
                 if (bNext) { bNext.style.display = ''; bNext.classList.add('visible'); }
-                if (bExit) { bExit.style.display = ''; } // Restaura o botão de sair interno
+                if (bExit) { bExit.style.display = ''; }
                 
                 const pillMain = document.getElementById('pill-main-text');
                 const pillSub = document.getElementById('pill-sub-text');
@@ -1542,16 +1652,12 @@ if (homeProgressPanel) {
         }
     });
 
-    // Evento de fechar a pílula ao clicar fora (mantido igual)
     document.addEventListener('click', function(e) {
         if (!homeProgressPanel.classList.contains('contracted')) {
             if (!e.target.closest('#home-progress-panel') && !e.target.closest('.map-floating-round-btn') && !e.target.closest('#btn-checkin') && !e.target.closest('.bottom-nav') && !e.target.closest('.top-header')) {
-                
                 homeProgressPanel.classList.add('contracted');
-                
                 const trailNavGroup = document.querySelector('.trail-nav-group');
                 if (trailNavGroup) trailNavGroup.classList.remove('expanded-mode');
-                
                 if (btnCheckin) btnCheckin.classList.remove('visible');
             }
         }
@@ -1561,7 +1667,6 @@ if (homeProgressPanel) {
 function iniciarTrilhaDeFato() {
     isTrailStarted = true;
     
-    // Atualiza as cores da trilha dinamicamente de acordo com o tema ativo no momento do clique
     if (camadaTrilhasGeoJSON) {
         const btnClaroAtivo = document.querySelector('.mode-control .segment-btn[data-mode="light"]')?.classList.contains('active');
         const btnSistemaAtivo = document.querySelector('.mode-control .segment-btn[data-mode="system"]')?.classList.contains('active');
@@ -1570,16 +1675,14 @@ function iniciarTrilhaDeFato() {
         aplicarTemaMapa(temaAtual);
     }
 
-    // --- Fecha popup aberto e arranca os popups das abelhas temporariamente ---
     if (mapaTrilha) mapaTrilha.closePopup(); 
     
     Object.keys(marcadoresNoMapa).forEach(nome => {
         const isBeeStation = nome.includes("Casa") || nome.includes("Hotel") || nome.includes("Meliponário");
         if (isBeeStation) {
-            marcadoresNoMapa[nome].unbindPopup(); // Remove o popup para o clique não fazer nada
+            marcadoresNoMapa[nome].unbindPopup(); 
         }
     });
-    // -----------------------------------------------------------------------------------
 
     const pPanel = document.getElementById('home-progress-panel');
     const progressInfo = document.querySelector('.progress-info');
@@ -1591,13 +1694,16 @@ function iniciarTrilhaDeFato() {
     pPanel.classList.add('contracted');
     
     setTimeout(() => {
+        // MÁGICA AQUI: Declarando o idioma antes de preencher o innerHTML
+        const lang = localStorage.getItem('beezita_lang') || 'pt';
+        
         if (progressInfo) {
             progressInfo.style.paddingRight = ''; 
             progressInfo.style.marginTop = '';
             progressInfo.innerHTML = `
-                <span class="progress-subtitle" data-i18n="trail_started">INÍCIO DA TRILHA</span>
-                <span class="progress-action-text" data-i18n="go_to_gate">VÁ ATÉ A PORTARIA 1 DO MHNJB</span>
-                <h2 class="progress-title"><strong id="contador-estacoes">0</strong> / 9 estações visitadas</h2>
+                <span class="progress-subtitle" data-i18n="trail_started">${dicionario[lang].trail_started}</span>
+                <span class="progress-action-text" data-i18n="go_to_gate_expanded">${dicionario[lang].go_to_gate_expanded}</span>
+                <h2 class="progress-title"><strong id="contador-estacoes">0</strong> / 9 <span data-i18n="stations_visited">${dicionario[lang].stations_visited}</span></h2>
                 <div class="progress-bar-container">
                     <div class="progress-bar" style="width: 0%;"></div>
                 </div>
@@ -1611,7 +1717,6 @@ function iniciarTrilhaDeFato() {
 
         const pillMain = document.getElementById('pill-main-text');
         const pillSub = document.getElementById('pill-sub-text');
-        const lang = localStorage.getItem('beezita_lang') || 'pt';
         
         if (pillMain && pillSub) {
             pillMain.innerText = dicionario[lang].continue_trail || "CONTINUE PELA TRILHA";
@@ -1885,7 +1990,9 @@ window.abrirRecompensaAvulsa = function(nomeAlvo) {
         document.querySelector('.discovery-title').innerHTML = dados.titulo;
         document.querySelector('.discovery-description').innerHTML = dados.descricao;
         document.querySelector('.discovery-curiosity').innerHTML = dados.curiosidade;
-        document.querySelector('.discovery-badge').innerHTML = dados.badge || "Nova descoberta!";
+        const lang = localStorage.getItem('beezita_lang') || 'pt';
+        document.querySelector('.discovery-badge').innerHTML = dados.badge || dicionario[lang].new_discovery;
+        document.querySelector('.discovery-badge').setAttribute('data-i18n', dados.badge ? '' : 'new_discovery'); // Trava só se for genérico
     } else {
         document.querySelector('.discovery-title').innerHTML = `Espécie Desconhecida <span class="scientific-name">(...)</span>`;
         document.querySelector('.discovery-description').innerHTML = `Você descobriu a ${nomeAlvo}! O texto descritivo desta estação será adicionado em breve.`;
@@ -1931,7 +2038,9 @@ function alternarModoUI(modo) {
             document.querySelector('.discovery-title').innerHTML = dados.titulo;
             document.querySelector('.discovery-description').innerHTML = dados.descricao;
             document.querySelector('.discovery-curiosity').innerHTML = dados.curiosidade;
-            document.querySelector('.discovery-badge').innerHTML = dados.badge || "Nova descoberta!";
+            const lang = localStorage.getItem('beezita_lang') || 'pt';
+            document.querySelector('.discovery-badge').innerHTML = dados.badge || dicionario[lang].new_discovery;
+            document.querySelector('.discovery-badge').setAttribute('data-i18n', dados.badge ? '' : 'new_discovery'); // Trava só se for genérico
         } else {
             document.querySelector('.discovery-title').innerHTML = `Espécie Desconhecida <span class="scientific-name">(...)</span>`;
             document.querySelector('.discovery-description').innerHTML = `Você descobriu a ${nomeAlvo}! O texto descritivo desta estação será adicionado em breve.`;
@@ -2035,6 +2144,7 @@ function iniciarConclusao() {
         if (bNext) bNext.style.display = 'none'; // Botão ocultado dando espaço pro botão Sair
         
         // --- EFEITO PULSANTE E INCANDESCENTE APLICADO NO H2 ---
+        // --- EFEITO PULSANTE E INCANDESCENTE APLICADO NO H2 ---
         const lang = localStorage.getItem('beezita_lang') || 'pt';
         const txtCongrats = dicionario[lang].trail_congrats || "PARABÉNS!";
         const txtComp = dicionario[lang].trail_completed || "Você completou a trilha.";
@@ -2043,9 +2153,9 @@ function iniciarConclusao() {
 
         progressInfo.innerHTML = `
             <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; width: 100%; height: 100%; min-height: 85px;">
-                <h2 style="color: var(--honey-yellow); font-size: 1.1rem; margin-bottom: 2px; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; animation: smooth-blink 2s ease-in-out infinite; text-shadow: 0 0 8px var(--glow-yellow);">${txtCongrats}</h2>
-                <p style="color: var(--warm-cream); font-size: 0.8rem; margin-bottom: 4px; text-transform: uppercase; font-weight: 600;">${txtComp}</p>
-                <p style="color: var(--warm-cream); font-size: 0.75rem; opacity: 0.8; font-weight: 400; line-height: 1.2;">${txtEnjoy}</p>
+                <h2 style="color: var(--honey-yellow); font-size: 1.1rem; margin-bottom: 2px; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; animation: smooth-blink 2s ease-in-out infinite; text-shadow: 0 0 8px var(--glow-yellow);" data-i18n="trail_congrats">${txtCongrats}</h2>
+                <p style="color: var(--warm-cream); font-size: 0.8rem; margin-bottom: 4px; text-transform: uppercase; font-weight: 600;" data-i18n="trail_completed">${txtComp}</p>
+                <p style="color: var(--warm-cream); font-size: 0.75rem; opacity: 0.8; font-weight: 400; line-height: 1.2;" data-i18n="trail_enjoy">${txtEnjoy}</p>
             </div>
         `;
         
@@ -2084,19 +2194,15 @@ function resetarTrilha() {
     isTrailStarted = false;
     passoTrilhaAtual = 0;
 
-    // --- MÁGICA 2: Devolve os popups para as casas de abelhas quando a trilha acaba ---
     Object.keys(marcadoresNoMapa).forEach(nome => {
         const isBeeStation = nome.includes("Casa") || nome.includes("Hotel") || nome.includes("Meliponário");
         if (isBeeStation && marcadoresNoMapa[nome].customPopupContent) {
             marcadoresNoMapa[nome].bindPopup(marcadoresNoMapa[nome].customPopupContent); 
         }
     });
-    // ---------------------------------------------------------------------------------
 
-    // Força a remoção do botão de qualquer tela anterior
     if (btnCheckin) btnCheckin.classList.remove('visible');
     
-    // Atualiza o estilo limpando o status ativo da trilha de acordo com o tema atual
     if (camadaTrilhasGeoJSON) {
         const btnClaroAtivo = document.querySelector('.mode-control .segment-btn[data-mode="light"]')?.classList.contains('active');
         const btnSistemaAtivo = document.querySelector('.mode-control .segment-btn[data-mode="system"]')?.classList.contains('active');
@@ -2123,17 +2229,19 @@ function resetarTrilha() {
         bNext.classList.remove('visible', 'btn-continuar-mode', 'btn-is-concluir', 'is-final');
         bNext.classList.add('nav-disabled'); 
         bNext.innerHTML = '<i class="bi bi-chevron-right"></i>';
-        bNext.style.display = ''; // Tira o display forçado
+        bNext.style.display = ''; 
     }
     if (bPrev) { 
         bPrev.classList.remove('visible'); 
-        bPrev.style.display = ''; // Tira o display forçado
+        bPrev.style.display = ''; 
     }
-    if (bExit) { bExit.style.display = 'none'; } // Esconde o "Sair" na tela inicial
+    if (bExit) { bExit.style.display = 'none'; } 
     
     pPanel.classList.add('contracted');
     document.querySelector('.trail-nav-group').classList.remove('expanded-mode');
-    document.getElementById('pill-main-text').innerText = "COMEÇAR TRILHA";
+    
+    const lang = localStorage.getItem('beezita_lang') || 'pt';
+    document.getElementById('pill-main-text').innerText = dicionario[lang].start_trail || "COMEÇAR TRILHA";
     document.getElementById('pill-sub-text').style.display = "none";
     
     const oldInfo = progressInfo.querySelector('.progress-info');
@@ -2142,10 +2250,12 @@ function resetarTrilha() {
     const originalInfo = document.createElement('div');
     originalInfo.className = 'progress-info';
     originalInfo.style.marginTop = '20px';
+    
+    // MÁGICA AQUI: Usando o dicionário para repovoar os dados iniciais dinamicamente
     originalInfo.innerHTML = `
-        <span class="progress-subtitle" data-i18n="trail_started">INÍCIO DA TRILHA</span>
-        <span class="progress-action-text" data-i18n="go_to_gate">VÁ ATÉ A PORTARIA 1 DO MHNJB</span>
-        <h2 class="progress-title"><strong id="contador-estacoes">0</strong> / 9 estações visitadas</h2>
+        <span class="progress-subtitle" data-i18n="trail_started">${dicionario[lang].trail_started}</span>
+        <span class="progress-action-text" data-i18n="go_to_gate">${dicionario[lang].go_to_gate}</span>
+        <h2 class="progress-title"><strong id="contador-estacoes">0</strong> / 9 <span data-i18n="stations_visited">${dicionario[lang].stations_visited}</span></h2>
         <div class="progress-bar-container">
             <div class="progress-bar" style="width: 0%;"></div>
         </div>
@@ -2314,21 +2424,53 @@ document.querySelectorAll('.legend-item').forEach(item => {
 // --- CARTAS: SISTEMA GAMIFICADO: DESAFIO (QUIZ & CURIOSIDADES) ---
 // =======================================================================
 
-const quizAbelhas = [
-    { q: "As abelhas que aparecem na trilha são conhecidas como:", options: ["Abelhas sem ferrão", "Abelhas que não possuem asas", "Abelhas que vivem apenas em flores"], correct: 0 },
-    { q: "Por que as abelhas são importantes para o museu?", options: ["Ajudam as plantas a se reproduzirem por meio da polinização", "Protegem as árvores de todos os animais", "Produzem oxigênio para as plantas respirarem"], correct: 0 },
-    { q: "Como as abelhas sem ferrão guardam seus alimentos?", options: ["Em pequenos potes dentro do ninho", "Em favos iguais aos das abelhas mais conhecidas", "Dentro das folhas das plantas próximas"], correct: 0 },
-    { q: "O que é um meliponário?", options: ["Um espaço onde são criadas abelhas sem ferrão", "Lugar onde todas as espécies de insetos vivem", "Um jardim feito apenas para produzir mel"], correct: 0 },
-    { q: "Todas as abelhas vivem em grupos organizados?", options: ["Não. Algumas abelhas possuem hábitos solitários", "Sim. Todas as abelhas vivem em colmeias", "Sim. Toda abelha possui uma rainha"], correct: 0 }
-];
+const quizAbelhas = {
+    pt: [
+        { q: "As abelhas que aparecem na trilha são conhecidas como:", options: ["Abelhas sem ferrão", "Abelhas que não possuem asas", "Abelhas que vivem apenas em flores"], correct: 0 },
+        { q: "Por que as abelhas são importantes para o museu?", options: ["Ajudam as plantas a se reproduzirem por meio da polinização", "Protegem as árvores de todos os animais", "Produzem oxigênio para as plantas respirarem"], correct: 0 },
+        { q: "Como as abelhas sem ferrão guardam seus alimentos?", options: ["Em pequenos potes dentro do ninho", "Em favos iguais aos das abelhas mais conhecidas", "Dentro das folhas das plantas próximas"], correct: 0 },
+        { q: "O que é um meliponário?", options: ["Um espaço onde são criadas abelhas sem ferrão", "Lugar onde todas as espécies de insetos vivem", "Um jardim feito apenas para produzir mel"], correct: 0 },
+        { q: "Todas as abelhas vivem em grupos organizados?", options: ["Não. Algumas abelhas possuem hábitos solitários", "Sim. Todas as abelhas vivem em colmeias", "Sim. Toda abelha possui uma rainha"], correct: 0 }
+    ],
+    en: [
+        { q: "The bees that appear on the trail are known as:", options: ["Stingless bees", "Wingless bees", "Bees that live only in flowers"], correct: 0 },
+        { q: "Why are bees important for the museum?", options: ["They help plants reproduce through pollination", "They protect trees from all animals", "They produce oxygen for plants to breathe"], correct: 0 },
+        { q: "How do stingless bees store their food?", options: ["In small pots inside the nest", "In honeycombs like the most common bees", "Inside the leaves of nearby plants"], correct: 0 },
+        { q: "What is a meliponary?", options: ["A space where stingless bees are raised", "A place where all insect species live", "A garden made solely to produce honey"], correct: 0 },
+        { q: "Do all bees live in organized groups?", options: ["No. Some bees have solitary habits", "Yes. All bees live in hives", "Yes. Every bee has a queen"], correct: 0 }
+    ],
+    es: [
+        { q: "Las abejas que aparecen en el sendero se conocen como:", options: ["Abejas sin aguijón", "Abejas que no tienen alas", "Abejas que viven solo en flores"], correct: 0 },
+        { q: "¿Por qué las abejas son importantes para el museo?", options: ["Ayudan a las plantas a reproducirse mediante la polinización", "Protegen los árboles de todos los animales", "Producen oxígeno para que las plantas respiren"], correct: 0 },
+        { q: "¿Cómo guardan su alimento las abejas sin aguijón?", options: ["En pequeños potes dentro del nido", "En panales iguales a los de las abejas más conocidas", "Dentro de las hojas de las plantas cercanas"], correct: 0 },
+        { q: "¿Qué es un meliponario?", options: ["Un espacio donde se crían abejas sin aguijón", "Un lugar donde viven todas las especies de insectos", "Un jardín hecho solo para producir miel"], correct: 0 },
+        { q: "¿Todas las abejas viven en grupos organizados?", options: ["No. Algunas abejas tienen hábitos solitarios", "Sí. Todas las abejas viven en colmenas", "Sí. Toda abeja tiene una reina"], correct: 0 }
+    ]
+};
 
-const curiosidadesMHNJB = [
-    { title: "Você sabia?", text: "No meio da cidade existe um pedaço de Mata Atlântica! O MHNJB guarda uma grande área verde que funciona como um refúgio para a biodiversidade." },
-    { title: "Muitos Habitantes", text: "Além das plantas, abriga aves, pequenos mamíferos e insetos. Às vezes, os menores moradores são os que fazem os maiores trabalhos." },
-    { title: "Histórias das Plantas", text: "As plantas não são apenas decoração: elas alimentam animais, protegem o solo e algumas fazem parte de rigorosas pesquisas científicas." },
-    { title: "Passado e Presente", text: "O museu guarda coleções de botânica, zoologia e arqueologia. Você encontra desde seres vivos atuais até registros fósseis." },
-    { title: "Presépio Patrimônio", text: "Abriga o famoso Presépio do Pipiripau. Uma obra com cenas móveis que é reconhecida como patrimônio histórico nacional." }
-];
+const curiosidadesMHNJB = {
+    pt: [
+        { title: "Você sabia?", text: "No meio da cidade existe um pedaço de Mata Atlântica! O MHNJB guarda uma grande área verde que funciona como um refúgio para a biodiversidade." },
+        { title: "Muitos Habitantes", text: "Além das plantas, abriga aves, pequenos mamíferos e insetos. Às vezes, os menores moradores são os que fazem os maiores trabalhos." },
+        { title: "Histórias das Plantas", text: "As plantas não são apenas decoração: elas alimentam animais, protegem o solo e algumas fazem parte de rigorosas pesquisas científicas." },
+        { title: "Passado e Presente", text: "O museu guarda coleções de botânica, zoologia e arqueologia. Você encontra desde seres vivos atuais até registros fósseis." },
+        { title: "Presépio Patrimônio", text: "Abriga o famoso Presépio do Pipiripau. Uma obra com cenas móveis que é reconhecida como patrimônio histórico nacional." }
+    ],
+    en: [
+        { title: "Did you know?", text: "In the middle of the city, there is a piece of the Atlantic Forest! The MHNJB preserves a large green area that acts as a refuge for biodiversity." },
+        { title: "Many Inhabitants", text: "Besides plants, it houses birds, small mammals, and insects. Sometimes, the smallest residents do the biggest jobs." },
+        { title: "Plant Stories", text: "Plants are not just decoration: they feed animals, protect the soil, and some are part of rigorous scientific research." },
+        { title: "Past and Present", text: "The museum holds botany, zoology, and archaeology collections. You can find everything from modern living beings to fossil records." },
+        { title: "Heritage Nativity Scene", text: "It houses the famous Pipiripau Nativity Scene. A piece with moving scenes that is recognized as a national historical heritage." }
+    ],
+    es: [
+        { title: "¿Sabías que?", text: "¡En medio de la ciudad hay un pedazo de Mata Atlántica! El MHNJB conserva una gran área verde que funciona como refugio para la biodiversidad." },
+        { title: "Muchos Habitantes", text: "Además de plantas, alberga aves, pequeños mamíferos e insectos. A veces, los residentes más pequeños hacen los trabajos más grandes." },
+        { title: "Historias de las Plantas", text: "Las plantas no son solo decoración: alimentan a los animales, protegen el suelo y algunas forman parte de rigurosas investigaciones científicas." },
+        { title: "Pasado y Presente", text: "El museo guarda colecciones de botánica, zoología y arqueología. Puedes encontrar desde seres vivos actuales hasta registros fósiles." },
+        { title: "Pesebre Patrimonio", text: "Alberga el famoso Pesebre de Pipiripau. Una obra con escenas móviles reconocida como patrimonio histórico nacional." }
+    ]
+};
 
 let gameState = { mode: 'quiz', index: 0, locked: false, correct: 0 };
 
@@ -2345,11 +2487,14 @@ function renderizarCartas() {
     const stack = document.getElementById('card-stack');
     if (!stack) return;
     
-    const data = gameState.mode === 'quiz' ? quizAbelhas : curiosidadesMHNJB;
+    // Puxa o idioma atual (se não tiver, usa pt)
+    const lang = localStorage.getItem('beezita_lang') || 'pt';
+    
+    // MÁGICA: Agora acessamos a aba de idioma correta do nosso banco de dados trilíngue
+    const data = gameState.mode === 'quiz' ? quizAbelhas[lang] : curiosidadesMHNJB[lang];
     const total = data.length;
     
     // Atualiza Progresso e Textos
-    const lang = localStorage.getItem('beezita_lang') || 'pt';
     const txtCartas = dicionario[lang].game_cards || "cartas";
     
     document.getElementById('game-progress-text').innerText = `${gameState.index} / ${total} ${txtCartas}`;
@@ -2369,10 +2514,10 @@ function renderizarCartas() {
         
         let conteudo = '';
         if (gameState.mode === 'quiz') {
-            conteudo = `<div class="game-card-badge">Pergunta ${cardIdx + 1}</div>
+            conteudo = `<div class="game-card-badge">${dicionario[lang].game_question} ${cardIdx + 1}</div>
                         <div class="game-card-title">${cardData.q}</div>`;
         } else {
-            conteudo = `<div class="game-card-badge">Curiosidade ${cardIdx + 1}</div>
+            conteudo = `<div class="game-card-badge">${dicionario[lang].game_curiosity} ${cardIdx + 1}</div>
                         <div class="game-card-title">${cardData.title}</div>
                         <div class="game-card-text">${cardData.text}</div>`;
         }
@@ -2383,36 +2528,36 @@ function renderizarCartas() {
     // Gerencia a Área de Baixo
     const quizArea = document.getElementById('quiz-options-container');
     const hintArea = document.getElementById('swipe-hint-container');
-    const restartArea = document.getElementById('restart-container'); // O novo botão
+    const restartArea = document.getElementById('restart-container');
 
     if (gameState.index >= total) {
-        // Fim de jogo: Telas Animadas separadas por modo
+        // Fim de jogo: Telas Animadas separadas por modo e TRADUZIDAS
         let finalHtml = '';
         if (gameState.mode === 'quiz') {
             finalHtml = `
                 <div class="game-card card-front" style="justify-content: center;">
-                    <div class="game-card-title" style="font-size: 1.5rem; margin-bottom: 5px;">Parabéns!</div>
-                    <div class="game-card-text" style="margin-bottom: 25px;">Você completou o quiz.</div>
+                    <div class="game-card-title" style="font-size: 1.5rem; margin-bottom: 5px;">${dicionario[lang].game_congrats}</div>
+                    <div class="game-card-text" style="margin-bottom: 25px;">${dicionario[lang].game_quiz_done}</div>
                     <div class="score-pop">
-                        <span style="font-size: 0.8rem; text-transform: uppercase;">Acertos</span><br>
+                        <span style="font-size: 0.8rem; text-transform: uppercase;">${dicionario[lang].game_score}</span><br>
                         <span style="font-size: 1.8rem; font-weight: 800;">${gameState.correct} / ${total}</span>
                     </div>
                 </div>`;
         } else {
             finalHtml = `
                 <div class="game-card card-front" style="justify-content: center;">
-                    <div class="game-card-title" style="font-size: 1.5rem;">Parabéns!</div>
-                    <div class="game-card-text">Você completou todas as cartas.</div>
+                    <div class="game-card-title" style="font-size: 1.5rem;">${dicionario[lang].game_congrats}</div>
+                    <div class="game-card-text">${dicionario[lang].game_cards_done}</div>
                 </div>`;
         }
 
         stack.innerHTML = finalHtml;
         quizArea.style.display = 'none';
         hintArea.style.display = 'none';
-        if (restartArea) restartArea.style.display = 'flex'; // Acende o botão recomeçar
+        if (restartArea) restartArea.style.display = 'flex';
         return;
     } else {
-        if (restartArea) restartArea.style.display = 'none'; // Esconde o recomeçar durante o jogo
+        if (restartArea) restartArea.style.display = 'none';
     }
 
     if (gameState.mode === 'quiz') {
