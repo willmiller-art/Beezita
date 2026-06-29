@@ -1,6 +1,6 @@
 // --- SERVICE WORKER DO BEEZITA (COM SUPORTE A MAPA OFFLINE) ---
 
-const CACHE_NAME = 'beezita-cache-v3'; // Mudamos para v3 para forçar a atualização no celular
+const CACHE_NAME = 'beezita-cache-v3.1'; // Mudar o v(número+) força a atualização no celular
 const MAP_CACHE_NAME = 'beezita-map-tiles-v1';
 
 const urlsToCache = [
