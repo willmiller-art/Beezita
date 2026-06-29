@@ -59,7 +59,7 @@
             <div class="discovery-texts">
                
                <div class="discovery-badge-group">
-                   <h3 class="discovery-badge">Nova descoberta!</h3>
+                   <h3 class="discovery-badge" data-i18n="new_discovery">Nova descoberta!</h3>
                    <div class="discovery-dots">...................</div>
                </div>
 
@@ -101,7 +101,7 @@
             </button>
 
             <button id="btn-checkin" class="checkin-btn glass-panel">
-              <i class="bi bi-geo-alt-fill"></i> <span>ESTOU AQUI</span>
+              <i class="bi bi-geo-alt-fill"></i> <span data-i18n="i_am_here">ESTOU AQUI</span>
             </button>
 
             <button id="btn-next-point" class="map-floating-round-btn glass-panel nav-disabled">
@@ -121,14 +121,14 @@
               </div>
               
               <div class="expanded-content">
-                <button id="btn-exit-trail" class="circle-btn">
+                <button id="btn-exit-trail" class="circle-btn" data-i18n="btn_exit">
                   SAIR
                 </button>
                 
                 <div class="progress-info" style="margin-top: 20px;">
                   <span class="progress-subtitle" data-i18n="trail_started">INÍCIO DA TRILHA</span>
-                  <span class="progress-action-text" data-i18n="go_to_gate">VÁ ATÉ A PORTARIA 1 DO MHNJB</span>
-                  <h2 class="progress-title"><strong id="contador-estacoes">0</strong> / 8 estações visitadas</h2>
+                  <span class="progress-action-text" data-i18n="go_to_gate_expanded">VÁ ATÉ A PORTARIA 1 DO MHNJB</span>
+                  <h2 class="progress-title"><strong id="contador-estacoes">0</strong> / 9 <span data-i18n="stations_visited">estações visitadas</span></h2>
                   <div class="progress-bar-container">
                     <div class="progress-bar" style="width: 0%;"></div>
                   </div>
@@ -215,13 +215,13 @@
               <!-- Dica de Swipe para Curiosidades -->
               <div id="swipe-hint-container" class="swipe-hint-area" style="display: none;">
                   <i class="bi bi-hand-index-thumb"></i>
-                  <p>Deslize a carta para o lado e descubra curiosidades</p>
+                  <p data-i18n="game_swipe_hint">Deslize a carta para o lado e descubra curiosidades</p>
               </div>
 
               <!-- Botão de Recomeçar (Aparece só no fim) -->
               <div id="restart-container" class="quiz-options" style="display: none; margin-top: 15px;">
                   <button class="quiz-btn btn-restart" onclick="recomecarGame()">
-                      <i class="bi bi-arrow-counterclockwise" style="font-size: 1.2rem;"></i> RECOMEÇAR
+                      <i class="bi bi-arrow-counterclockwise" style="font-size: 1.2rem;"></i> <span data-i18n="game_restart">RECOMEÇAR</span>
                   </button>
               </div>
 
@@ -340,11 +340,54 @@
       <div class="settings-content-scroll">
         <div class="settings-group-title" data-i18n="info_help">AJUDA</div>
         <div class="settings-card-group">
-            <a href="#" class="settings-item"><div class="item-label"><i class="bi bi-map"></i><span class="text" data-i18n="info_how_map">Como usar o mapa</span></div><i class="bi bi-chevron-right arrow-icon"></i></a>
+            <a href="#" class="settings-item nav-to-sub" data-target="how-to-use-panel"><div class="item-label"><i class="bi bi-compass"></i><span class="text" data-i18n="info_how_map">Como usar o App</span></div><i class="bi bi-chevron-right arrow-icon"></i></a>
             <div class="settings-item-divider"></div>
             <a href="#" class="settings-item nav-to-sub" data-target="faq-panel"><div class="item-label"><i class="bi bi-question-circle"></i><span class="text" data-i18n="nav_faq">Perguntas Frequentes</span></div><i class="bi bi-chevron-right arrow-icon"></i></a>
         </div>
         <div class="info-credits">PEAP 2026 MHNJB/UFMG <i class="bi bi-heart-fill"></i> Will Miller</div>
+      </div>
+    </section>
+
+    <section id="how-to-use-panel" class="sub-settings-panel glass-panel">
+      <div class="settings-header">
+        <button class="circle-btn back-settings-btn"><i class="bi bi-chevron-left"></i></button>
+        <h2 data-i18n="info_how_map">Como usar o App</h2>
+        <div style="width: 45px;"></div>
+      </div>
+      <div class="settings-content-scroll" style="padding-top: 10px;">
+        <p class="settings-desc" style="text-align: center; font-size: 0.75rem; color: var(--warm-cream); opacity: 0.9; margin-bottom: 5px;" data-i18n="tut_intro">O Beezita é o seu guia digital de bolso. Veja as principais funções:</p>
+        
+        <div class="tutorial-card">
+          <div class="tutorial-icon"><i class="bi bi-signpost-2"></i></div>
+          <div class="tutorial-text">
+            <h4 data-i18n="tut_trail_title">Trilha da Polinização</h4>
+            <p data-i18n="tut_trail_desc">Navegue pelo mapa seguindo a linha tracejada. Ao chegar em um ponto, clique em 'ESTOU AQUI' para desbloquear cartas e desafios.</p>
+          </div>
+        </div>
+
+        <div class="tutorial-card">
+          <div class="tutorial-icon"><i class="bi bi-binoculars"></i></div>
+          <div class="tutorial-text">
+            <h4 data-i18n="tut_map_title">Exploração Livre</h4>
+            <p data-i18n="tut_map_desc">Use o botão de binóculos no mapa para ativar o Radar. Ele destaca exposições, árvores notáveis e utilidades próximas a você.</p>
+          </div>
+        </div>
+
+        <div class="tutorial-card">
+          <div class="tutorial-icon"><i class="bi bi-collection"></i></div>
+          <div class="tutorial-text">
+            <h4 data-i18n="tut_col_title">Diário de Bordo</h4>
+            <p data-i18n="tut_col_desc">Cada descoberta na trilha fica salva na aba 'Coleção'. Revise o que aprendeu mesmo quando estiver offline.</p>
+          </div>
+        </div>
+
+        <div class="tutorial-card" style="margin-bottom: 20px;">
+          <div class="tutorial-icon"><i class="bi bi-bank"></i></div>
+          <div class="tutorial-text">
+            <h4 data-i18n="tut_muse_title">O Museu (MHNJB)</h4>
+            <p data-i18n="tut_muse_desc">Na aba MHNJB, você encontra detalhes de funcionamento, ingressos e a história do Jardim Botânico.</p>
+          </div>
+        </div>
       </div>
     </section>
 
