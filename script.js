@@ -1200,10 +1200,10 @@ const recompensasDados = {
         curiosidade: `<strong>Curiosidade:</strong> Algumas abelhas constroem seus ninhos escavando madeira, solo ou aproveitando pequenos buracos já existentes. As abelhas em geral ajudam a polinizar plantas do Museu, garantindo a reprodução de muitas espécies vegetais.`
     },
     "Casa de abelha 7": {
-        badge: `Descoberta especial!`,
-        titulo: `<span class="nome-especial-orquidea">Abelha das Orquídeas</span> <br><span class="scientific-name">(Euglossini)</span>`, 
-        descricao: `Coloridas e brilhantes, essas abelhas visitam flores em busca de aromas especiais. Os machos coletam fragrâncias para produzir um perfume próprio.`,
-        curiosidade: `<strong>Curiosidade:</strong> O perfume funciona como um sinal para atrair possíveis parceiras.`
+        badge: `Resina protetora!`,
+        titulo: `<span class="nome-especial-orquidea">Marmelada-amarela</span> <br><span class="scientific-name">(Frieseomelitta varia)</span>`, 
+        descricao: `Conhecida também como manoel-de-abreu ou zamboque, esta abelha nidifica em ocos de árvores. Para proteger sua casa, as operárias cobrem as superfícies ao redor da entrada do ninho com uma camada de resina escura que pode se estender por até 2 metros de distância! (© Cristiano Menezes)`,
+        curiosidade: `<strong>Curiosidade:</strong> Se a colônia fica órfã, as operárias constroem células auxiliares com alimento extra. A larva que consome essa porção a mais se desenvolve em uma nova rainha.`
     },
     "Meliponário": {
         badge: `Um bairro de abelhas`,
@@ -1982,9 +1982,6 @@ window.abrirRecompensaAvulsa = function(nomeAlvo) {
     btnNext.classList.remove('nav-disabled', 'btn-is-concluir', 'btn-continuar-mode', 'is-final');
     btnNext.classList.add('btn-fechar-avulso'); 
 
-    // Verifica se é a Orquídea para ligar o tema especial
-    overlay.classList.toggle('tema-orquidea', nomeAlvo === "Casa de abelha 7");
-
     const dados = recompensasDados[nomeAlvo];
     if (dados) {
         document.querySelector('.discovery-title').innerHTML = dados.titulo;
@@ -2031,7 +2028,6 @@ function alternarModoUI(modo) {
         btnNext.classList.add('btn-continuar-mode');
 
         const nomeAlvo = roteiroTrilha[passoTrilhaAtual];
-        overlay.classList.toggle('tema-orquidea', nomeAlvo === "Casa de abelha 7");
 
         const dados = recompensasDados[nomeAlvo];
         if (dados) {
@@ -2714,7 +2710,7 @@ const colecaoDados = [
     { id: 'casa-de-abelha-4', titulo: 'Mandaçaia', subtitulo: 'Melipona quadrifasciata', cat: 'abelhas', img: 'https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=300&auto=format&fit=crop' },
     { id: 'casa-de-abelha-5', titulo: 'Guaraipo', subtitulo: 'Melipona bicolor', cat: 'abelhas', img: 'https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=300&auto=format&fit=crop' },
     { id: 'casa-de-abelha-6', titulo: 'Uruçu', subtitulo: 'Melipona scutellaris', cat: 'abelhas', img: 'https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=300&auto=format&fit=crop' },
-    { id: 'casa-de-abelha-7', titulo: 'Abelha das Orquídeas', subtitulo: 'Euglossini', cat: 'abelhas', img: 'https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=300&auto=format&fit=crop' },
+    { id: 'casa-de-abelha-7', titulo: 'Marmelada-amarela', subtitulo: 'Frieseomelitta varia', cat: 'abelhas', img: 'https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=300&auto=format&fit=crop' },
     { id: 'hotel-para-abelhas-solitárias', titulo: 'Hotel para Abelhas', subtitulo: 'Solitárias', cat: 'abelhas', img: 'https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=300&auto=format&fit=crop' },
     { id: 'meliponário', titulo: 'Meliponário', subtitulo: 'Diversas nativas', cat: 'abelhas', img: 'https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=300&auto=format&fit=crop' },
 
