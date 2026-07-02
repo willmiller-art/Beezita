@@ -452,6 +452,8 @@ const dicionario = {
         available_trail: "Trilha autoguiada disponível:",
         btn_start_trail: "COMEÇAR",
         trail_name: "Trilha da Polinização",
+        warn_dont_touch: "As abelhas nativas não picam!<br>Para o bem-estar delas, <strong>apenas observe e não toque nas caixas</strong>.",
+        close_btn: "FECHAR",
         follow_trail_to: "SIGA A TRILHA ATÉ", // Nova chave
         stations_visited: "estações visitadas",
         i_am_here: "ESTOU AQUI",
@@ -615,6 +617,8 @@ const dicionario = {
         available_trail: "Self-guided trail available:",
         btn_start_trail: "START",
         trail_name: "Pollination Trail",
+        warn_dont_touch: "Native bees don't sting!<br>For their well-being, <strong>please just observe and do not touch the boxes</strong>.",
+        close_btn: "CLOSE",
         follow_trail_to: "FOLLOW THE TRAIL TO", // Nova chave
         stations_visited: "stations visited",
         i_am_here: "I'M HERE",
@@ -778,6 +782,8 @@ const dicionario = {
         available_trail: "Sendero autoguiado disponible:",
         btn_start_trail: "COMENZAR",
         trail_name: "Sendero de la Polinización",
+        warn_dont_touch: "¡Las abejas nativas no pican!<br>Para su bienestar, <strong>solo observa y no toques las cajas</strong>.",
+        close_btn: "CERRAR",
         follow_trail_to: "SIGUE EL SENDERO HASTA", // Nova chave
         stations_visited: "estaciones visitadas",
         i_am_here: "ESTOY AQUÍ",
@@ -947,7 +953,7 @@ function aplicarIdioma(idioma) {
                 const icone = el.querySelector('i').outerHTML;
                 el.innerHTML = icone + " " + textos[chave];
             } else {
-                el.innerText = textos[chave];
+                el.innerHTML = textos[chave];
             }
         }
     });
@@ -1710,6 +1716,7 @@ function iniciarTrilhaDeFato() {
             `;
         }
         pPanel.classList.remove('contracted');
+        exibirAvisoPreservacao();
         if (bPrev) { bPrev.style.display = ''; bPrev.classList.add('visible'); }
         if (bNext) { bNext.style.display = ''; bNext.classList.add('visible'); }
         if (bExit) { bExit.style.display = ''; }
@@ -3139,4 +3146,51 @@ if (btnDownload) {
             statusTxt.innerText = dicionario[lang].set_delete || "EXCLUIR";
         }
     }
+}
+
+// --- LÓGICA DO AVISO DE PRESERVAÇÃO COM TEMPORIZADOR ---
+const avisoPreservacao = document.getElementById('aviso-preservacao');
+const btnFecharAviso = document.getElementById('btn-fechar-aviso-preservacao');
+const textoTimerAviso = document.getElementById('preservation-timer-text');
+let timerPreservacaoId = null;
+
+function exibirAvisoPreservacao() {
+    if (!avisoPreservacao || !textoTimerAviso) return;
+
+    // Limpa qualquer timer antigo antes de começar um novo
+    if (timerPreservacaoId) clearInterval(timerPreservacaoId);
+    
+    // Adiciona a classe no body para esconder a pílula de clima/camadas suavemente
+    document.body.classList.add('aviso-ativo');
+    
+    // Exibe o aviso
+    avisoPreservacao.classList.remove('hidden');
+    
+    let tempoRestante = 15;
+    textoTimerAviso.innerText = tempoRestante + 's';
+    
+    timerPreservacaoId = setInterval(() => {
+        tempoRestante--;
+        textoTimerAviso.innerText = tempoRestante + 's';
+        
+        if (tempoRestante <= 0) {
+            fecharAvisoPreservacao();
+        }
+    }, 1000);
+}
+
+function fecharAvisoPreservacao() {
+    if (timerPreservacaoId) clearInterval(timerPreservacaoId);
+    if (avisoPreservacao) avisoPreservacao.classList.add('hidden');
+    
+    // Remove a classe do body, fazendo a pílula de clima/camadas voltar suavemente
+    document.body.classList.remove('aviso-ativo');
+}
+
+if (btnFecharAviso) {
+    btnFecharAviso.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (typeof isHapticEnabled !== 'undefined' && isHapticEnabled && navigator.vibrate) navigator.vibrate(20);
+        fecharAvisoPreservacao();
+    });
 }
