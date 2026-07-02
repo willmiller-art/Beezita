@@ -1127,6 +1127,15 @@ body.access-high-contrast .map-floating-round-btn {
     border: 1px solid var(--glass-border);
     backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); /* CORREÇÃO: Iguala o desfoque com a bottom-nav */
     box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease;
+}
+
+/* Quando o aviso estiver ativo, esconde as ferramentas do mapa */
+body.aviso-ativo .map-tools-pill {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(20px);
+    pointer-events: none;
 }
 
 .tool-btn {
@@ -1692,4 +1701,72 @@ body.recompensa-ativa .trail-nav-group #btn-prev-point {
     line-height: 1.45;
     opacity: 0.85;
     margin: 0;
+}
+
+/* =========================================================
+   AVISO FLUTUANTE DE PRESERVAÇÃO (NÃO TOCAR NAS CAIXAS)
+========================================================= */
+.preservation-warning {
+    position: absolute;
+    top: 105px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+    max-width: 410px;
+    padding: 12px 14px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 120;
+    border: 1px solid var(--honey-yellow);
+    background: linear-gradient(145deg, rgba(255, 209, 92, 0.15), rgba(18, 21, 16, 0.85));
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.preservation-warning.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-50%) translateY(-20px);
+}
+
+body.recompensa-ativa .preservation-warning {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.preservation-warning .warning-icon {
+    font-size: 1.5rem;
+    display: flex; align-items: center; justify-content: center;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+}
+
+.preservation-warning p {
+    color: var(--warm-cream); font-size: 0.7rem; line-height: 1.35; margin: 0; flex: 1;
+}
+
+.preservation-warning p strong {
+    color: var(--honey-yellow); font-weight: 700;
+}
+
+/* O novo botão-pílula no lado direito do aviso */
+.preservation-timer-pill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 209, 92, 0.5);
+    border-radius: 12px;
+    padding: 6px 12px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.preservation-timer-pill:active {
+    transform: scale(0.92);
+    background: rgba(0, 0, 0, 0.6);
 }
