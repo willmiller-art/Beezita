@@ -1170,7 +1170,7 @@ const recompensasDados = {
     "Casa de abelha 2": {
         badge: `Cheiro de perigo no ar...`,
         titulo: `<span style="color: #ff6b6b; font-weight: 800;">Ataque</span> <span style="color: var(--warm-cream); font-weight: 500;">de</span> Abelha-limão <br><span class="scientific-name">(Lestrimelitta limao)</span>`,
-        descricao: `Nem toda abelha vive em paz com as vizinhas. A Abelha-limão pode invadir colônias de outras espécies para roubar recursos e ocupar ninhos. Faz parte das relações naturais entre os seres vivos e mostra como os ecossistemas possuem seus próprios mecanismos de equilíbrio.`,
+        descricao: `Nem toda abelha vive em paz com as vizinhas. A Abelha-limão pode invadir colônias de outras espécies para roubar recursos e ocupar ninhos. Faz parte das relações naturais entre os seres vivos e mostra como os ecossistemas possuem seus próprios mecanismos de equilíbrio.  Após um ataque, esta casa ficou <strong style='color: var(--honey-yellow);'>vazia!</strong>`,
         curiosidade: `<strong>Curiosidade:</strong> Algumas espécies desenvolveram estratégias especiais para sobreviver a esses ataques.`
     },
     "Casa de abelha 3": {
@@ -1181,35 +1181,35 @@ const recompensasDados = {
     "Casa de abelha 4": {
         titulo: `Mandaçaia <span class="scientific-name">(Melipona quadrifasciata)</span>`,
         descricao: `A Mandaçaia é uma das abelhas sem ferrão mais conhecidas do Brasil. Ela coleta néctar e pólen das flores e mantém reservas de alimento para períodos com pouca floração.`,
-        curiosidade: `<strong>Curiosidade:</strong> Sua entrada costuma ser construída com geoprópolis, uma mistura de resinas, cera e partículas de solo. O mel das abelhas sem ferrão é guardado em pequenos potes dentro do ninho, e não em favos como as abelhas Apis.`
+        curiosidade: `<strong>Curiosidade:</strong> Sua entrada costuma ser construída com geoprópolis, uma mistura de resinas, cera e partículas de solo. O mel das abelhas sem ferrão é guardado em pequenos potes dentro do ninho, e não em favos como as abelhas do gênero Apis.`
     },
     "Casa de abelha 5": {
         titulo: `Guaraipo <span class="scientific-name">(Melipona bicolor)</span>`,
-        descricao: `Mais tranquila e fácil de observar, a Guaraipo costuma manter guardiãs na entrada do ninho para controlar quem entra e quem sai da colônia.`,
+        descricao: `Mais tranquila e fácil de observar, a Guaraipo costuma ser encontrada em ambientes mais úmidos. Na entrada do ninho, é comum que haja abelhas guardiãs controlando quem entra e quem sai da colônia. O nome “bicolor” vem das duas faixas claras presentes no abdômen, o que ajuda a identificar a espécie.`,
         curiosidade: `<strong>Curiosidade:</strong> Em algumas situações, essa espécie pode conviver com mais de uma rainha no mesmo ninho.`
     },
     "Casa de abelha 6": {
         badge: `Ei, nós já nos vimos antes?`,
         titulo: `Guaraipo <span class="scientific-name">(Melipona bicolor)</span>`,
-        descricao: `Esta colônia é uma grande aliada do nosso Jardim Botânico. A Guaraipo é uma polinizadora essencial, garantindo a reprodução de diversas espécies de plantas que você encontra aqui ao redor.`,
-        curiosidade: `<strong>Curiosidade:</strong> O nome "bicolor" vem das duas faixas claras que ela possui no abdômen, um detalhe que ajuda a identificá-la.`
+        descricao: `Sim, é outra colônia de Guaraipo! A Guaraipo é uma polinizadora essencial e uma grande aliada do nosso Jardim Botânico. Ao visitar as flores em busca de néctar e pólen, ela ajuda na polinização e na reprodução de muitas das plantas que você encontra ao redor.`,
+        curiosidade: `<strong>Curiosidade:</strong> Assim como outras espécies do gênero Melipona, a Guaraipo transporta pólen nas "cestinhas" das patas traseiras, chamadas corbículas.`
     },
     "Hotel para abelhas solitárias": {
         titulo: `Hotel para Abelhas Solitárias`,
-        descricao: `Nem todas as abelhas vivem em colônias. Muitas espécies trabalham sozinhas durante toda a vida. Este hotel oferece abrigo para que elas possam descansar, nidificar e criar seus filhotes.`,
-        curiosidade: `<strong>Curiosidade:</strong> Algumas abelhas constroem seus ninhos escavando madeira, solo ou aproveitando pequenos buracos já existentes. As abelhas em geral ajudam a polinizar plantas do Museu, garantindo a reprodução de muitas espécies vegetais.`
+        descricao: `Nem todas as abelhas vivem em colônias. Muitas espécies passam toda a vida sozinhas. Algumas constroem seus ninhos escavando madeira ou o solo, enquanto outras aproveitam pequenos buracos já existentes. Este hotel oferece locais seguros para que elas construam seus ninhos e depositem seus ovos.`,
+        curiosidade: `<strong>Curiosidade:</strong> Diferente das abelhas sociais, cada abelha solitária constrói seu ninho, coleta alimento e realiza todas as tarefas sozinha.`
     },
     "Casa de abelha 7": {
         badge: `Resina protetora!`,
         titulo: `<span class="nome-especial-orquidea">Marmelada-amarela</span> <br><span class="scientific-name">(Frieseomelitta varia)</span>`, 
-        descricao: `Conhecida também como manoel-de-abreu ou zamboque, esta abelha nidifica em ocos de árvores. Para proteger sua casa, as operárias cobrem as superfícies ao redor da entrada do ninho com uma camada de resina escura que pode se estender por até 2 metros de distância! (© Cristiano Menezes)`,
+        descricao: `Esta abelha constrói seus ninhos em ocos de árvores. Para proteger a colônia, as operárias revestem a entrada do ninho e a região ao redor com uma resina escura e pegajosa, que dificulta a ação de invasores.`,
         curiosidade: `<strong>Curiosidade:</strong> Se a colônia fica órfã, as operárias constroem células auxiliares com alimento extra. A larva que consome essa porção a mais se desenvolve em uma nova rainha.`
     },
     "Meliponário": {
         badge: `Um bairro de abelhas`,
         titulo: `Meliponário`,
         descricao: `Você chegou ao meliponário! Aqui vivem diferentes espécies de abelhas sem ferrão que ajudam a conservar a biodiversidade e a restaurar áreas naturais por meio da polinização. Cada uma com suas regras, tarefas e formas de constituir suas colônias.`,
-        curiosidade: `<strong>Curiosidade:</strong> O mel dessas abelhas não é armazenado em favos, mas em pequenos potes construídos dentro do ninho.`
+        curiosidade: `<strong>Curiosidade:</strong> Além das espécies encontradas na trilha, o meliponário também abriga a Mirim-luci <i>(Plebeia lucii)</i>, Bugia <i>(Melipona mondury)</i> e Mirim-preguiça <i>(Friesella schrottkyi)</i>.`
     }
 };
 // Adicionar as outras "Casa de abelha X", "Hotel", etc, aqui depois seguindo o mesmo padrão!
