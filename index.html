@@ -42,6 +42,16 @@
           <div id="mapa-mhnjb" style="width: 100%; height: 100%; z-index: 1;"></div>
         </main>
 
+        <!-- Aviso flutuante de preservação -->
+        <div id="aviso-preservacao" class="preservation-warning glass-panel hidden">
+            <div class="warning-icon">🐝</div>
+            <p data-i18n="warn_dont_touch">As abelhas nativas não picam! Para o bem-estar delas, <strong>apenas observe e não toque nas caixas </strong>.</p>
+            <div class="preservation-timer-pill" id="btn-fechar-aviso-preservacao">
+                <span id="preservation-timer-text" style="font-size: 0.75rem; color: var(--warm-cream); font-weight: 700; font-variant-numeric: tabular-nums;">15s</span>
+                <span data-i18n="close_btn" style="font-size: 0.75rem; font-weight: 700; color: var(--honey-yellow); text-transform: uppercase;">FECHAR</span>
+            </div>
+        </div>
+        
         <div id="discovery-overlay">
           <div class="discovery-content">
             
@@ -354,7 +364,7 @@
             <div class="settings-item-divider" style="margin: 0;"></div>
             <div style="display: flex; flex-direction: column; gap: 3px;">
                 <span style="color: var(--honey-yellow); font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Fotografias</span>
-                <span style="color: var(--warm-cream); font-size: 0.8rem; font-weight: 500;">[Nome]</span>
+                <span style="color: var(--warm-cream); font-size: 0.8rem; font-weight: 500;">Fernanda Tupini</span>
             </div>
             <div class="settings-item-divider" style="margin: 0;"></div>
             <div style="display: flex; flex-direction: column; gap: 3px;">
@@ -369,11 +379,14 @@
             <div class="settings-item-divider" style="margin: 0;"></div>
             <div style="display: flex; flex-direction: column; gap: 3px;">
                 <span style="color: var(--honey-yellow); font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Apoio Institucional</span>
-                <span style="color: var(--warm-cream); font-size: 0.75rem; font-weight: 400; line-height: 1.4;">Museu de História Natural e Jardim Botânico da UFMG (MHNJB) / PEAP 2026</span>
+                <span style="color: var(--warm-cream); font-size: 0.75rem; font-weight: 400; line-height: 1.4;">Museu de História Natural e Jardim Botânico da UFMG</span>
             </div>
         </div>
 
-        <div class="info-credits" style="margin-top: 20px;">PEAP 2026 MHNJB/UFMG <i class="bi bi-heart-fill"></i> Will Miller</div>
+        <div class="info-credits" style="margin-top: 20px; display: flex; flex-direction: column; align-items: center; gap: 4px;">
+            <div>PEAP 2026 MHNJB/UFMG <i class="bi bi-heart-fill"></i> Will Miller</div>
+            <div style="font-size: 0.55rem; font-family: monospace; opacity: 0.6; letter-spacing: 1.5px;">v3.2</div>
+        </div>
       </div>
     </section>
 
